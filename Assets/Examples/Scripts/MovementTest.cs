@@ -63,6 +63,7 @@ public class MovementTest : MonoBehaviour
         //VRDevice.Device.GetButtonDown(VRButton.One);
     }
 
+    //Use Lerp
     private void FixedUpdate()
     {
         if (moveRight)
