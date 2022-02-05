@@ -31,7 +31,7 @@ public class MovementTest : MonoBehaviour
 
     private void Start()
     {
-        neutralRotation = paperPlane.localRotation.eulerAngles;
+        neutralRotation = paperPlane.rotation.eulerAngles;
     }
 
     private void Update()
@@ -93,7 +93,7 @@ public class MovementTest : MonoBehaviour
 
     private IEnumerator SmoothRotationReset()
     {
-        Vector3 currentRotation = paperPlane.localRotation.eulerAngles;
+        Vector3 currentRotation = paperPlane.rotation.eulerAngles;
         Vector3 deltaRotation = neutralRotation - currentRotation;
 
         if (currentRotation == neutralRotation)
