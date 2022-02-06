@@ -9,7 +9,7 @@ This is a Unity Project template with the Liminal SDK installed.
 - Change app name
 - Change package name, com.company.myapp
 
-## Examples (I broke this during experimentation, will fix manana)
+## Examples
 Go to Examples -> Scenes -> Example
 - A way to interact with Unity UI using the pointer
 - A way to interact with 3D objects using the pointer
