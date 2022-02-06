@@ -41,6 +41,10 @@ public class MovementTest : MonoBehaviour
             return;
 
         var rightInput = GetInput(VRInputDeviceHand.Right);
+        var leftInput = GetInput(VRInputDeviceHand.Left);
+
+        var rightAxis = rightInput.GetAxis2D(VRAxis.OneRaw);
+        var leftAxis = leftInput.GetAxis2D(VRAxis.TwoRaw);
 
         if (rightInput != null)
         {
@@ -57,14 +61,42 @@ public class MovementTest : MonoBehaviour
                 moveLeft = !moveLeft;
                 moveRight = false;
             }
+
+            if (rightAxis.x > 0)
+            {
+                Debug.Log("Right axis positive");
+            }
+
+            if (rightAxis.x < 0)
+            {
+                Debug.Log("Right axis negative");
+            }
+        }
+
+        if (leftInput != null)
+        {
+            if (leftAxis.y > 0)
+            {
+                Debug.Log("Left axis positive");
+            }
+
+            if (leftAxis.y < 0)
+            {
+                Debug.Log("Left axis negative");
+            }
         }
         
         //Any input
         //VRDevice.Device.GetButtonDown(VRButton.One);
     }
 
-    //Use Lerp
+    
     private void FixedUpdate()
+    {
+        PlayerMovement();
+    }
+
+    private void PlayerMovement()
     {
         if (moveRight)
         {
@@ -116,24 +148,5 @@ public class MovementTest : MonoBehaviour
         return hand == VRInputDeviceHand.Left ? device.SecondaryInputDevice : device.PrimaryInputDevice;
     }
 
-    /// <summary>
-    /// End will only close the application when you're within the platform
-    /// </summary>
-    public void End()
-    {
-        ExperienceApp.End();
-    }
-
-    public void FadeToBlack()
-    {
-        StartCoroutine(FadeToBlackRoutine());
-    }
-
-    private IEnumerator FadeToBlackRoutine()
-    {
-        ScreenFader.Instance.FadeTo(Color.black, duration: 1);
-        yield return ScreenFader.Instance.WaitUntilFadeComplete();
-        ScreenFader.Instance.FadeToClear(duration: 1);
-    }
-
+    
 }

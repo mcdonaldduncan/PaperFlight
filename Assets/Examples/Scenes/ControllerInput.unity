@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -315,6 +315,7 @@ MonoBehaviour:
   LimappConfig:
     SavedProfile: {fileID: 0}
     ProfileToApply: {fileID: 0}
+    OverrideProfile: 0
 --- !u!4 &531037339
 Transform:
   m_ObjectHideFlags: 0
@@ -343,8 +344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8066ed3b2e9e4c64f9c11142d910e9c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EmulatorDevice: 1
-  m_BuildDevice: 2
+  BuildType: 1
+  EditorType: 0
 --- !u!1 &650509772
 GameObject:
   m_ObjectHideFlags: 0
