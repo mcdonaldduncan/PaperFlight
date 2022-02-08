@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: pPlane2Mat
-    second: {fileID: 2100000, guid: d3204346ee01baf4ab36142354ac4fac, type: 2}
+    second: {fileID: 2100000, guid: 3b355aa0732fef348a4171e0e87359a9, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
