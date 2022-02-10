@@ -30,8 +30,8 @@ public class NodePathing : MonoBehaviour
 
         float step = speed * Time.deltaTime;
         paperPlane.transform.position = Vector3.MoveTowards(paperPlane.transform.position, nodes[nodeIndex].transform.position, step);
-        paperPlane.transform.right = -nodes[nodeIndex].transform.position;
-       
+        paperPlane.transform.right = -Vector3.MoveTowards(paperPlane.transform.position, nodes[nodeIndex].transform.position, step);
+
 
         if (Vector3.Distance(paperPlane.transform.position, nodes[nodeIndex].transform.position) < .001f)
         {
