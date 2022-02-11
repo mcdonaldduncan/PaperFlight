@@ -73,6 +73,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_1b3a089c9f15af83b908f01683f69e75_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4953287098934154e9c56640817be9a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_234068B7_Texture_1:
         m_Texture: {fileID: 2800000, guid: 4953287098934154e9c56640817be9a7, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -89,6 +93,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 2b41cbaa91f49334cb5b8fac15d0247f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_4af1cd35493b9485868c945388b3f7ff_Texture_1:
+        m_Texture: {fileID: 2800000, guid: e2d083428da58ac43bd919e038894a5b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_5A4E9748_Texture_1:
         m_Texture: {fileID: 2800000, guid: 2b41cbaa91f49334cb5b8fac15d0247f, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -99,6 +107,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_7F0B40D3_Texture_1:
         m_Texture: {fileID: 2800000, guid: e2d083428da58ac43bd919e038894a5b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_8955401eeb296187b7e2763250c17dfd_Texture_1:
+        m_Texture: {fileID: 2800000, guid: ae91c0b9a1e1323468d2497454412ec6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_8FB6F629_Texture_1:
@@ -130,6 +142,18 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -167,3 +191,4 @@ Material:
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+  m_BuildTextureStacks: []
