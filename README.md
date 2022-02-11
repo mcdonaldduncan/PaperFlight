@@ -4,7 +4,7 @@ This is a Unity Project template with the Liminal SDK installed.
 ## Requirements
 - [Git setup correctly in your environment path](https://github.com/LiminalVR/LiminalSdk-UnityPackage/blob/develop/README.md#setup-git)
 
-## TO DO
+## TO DO 90
 - Change the Company Name
 - Change app name
 - Change package name, com.company.myapp
