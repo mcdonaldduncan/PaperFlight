@@ -9,6 +9,12 @@ public class NodePathing : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float rotationSpeed;
 
+    [SerializeField] private BezierSpline spline;
+
+    public float duration;
+
+    private float progress;
+
     int nodeIndex;
     Transform nextNode;
     bool isNextNodeValid;
@@ -29,6 +35,11 @@ public class NodePathing : MonoBehaviour
 
     void Update()
     {
+        if (progress > 1f)
+        {
+            progress = 1f;
+        }
+        Debug.Log(spline.GetPoint(progress));
         // We have reached the end
         if (nodeIndex < nodes.Count)
         {

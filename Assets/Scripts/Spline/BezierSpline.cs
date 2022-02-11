@@ -107,6 +107,7 @@ public class BezierSpline : MonoBehaviour
 		EnforceMode(index);
 	}
 
+	// float t is a value between 0 and 1 of how far the object is along from one node to the next
 	public Vector3 GetPoint(float t)
 	{
 		int i;
