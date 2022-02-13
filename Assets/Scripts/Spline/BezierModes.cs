@@ -1,11 +1,6 @@
-﻿using UnityEngine;
-
-public class BezierModes : MonoBehaviour
+﻿public enum BezierControlPointMode
 {
-	public enum BezierControlPointMode
-	{
-		Free,
-		Aligned,
-		Mirrored
-	}
+	Free,
+	Aligned,
+	Mirrored
 }

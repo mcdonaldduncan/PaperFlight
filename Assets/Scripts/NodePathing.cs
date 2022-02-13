@@ -52,7 +52,7 @@ public class NodePathing : MonoBehaviour
         // Checks if the next node is valid once
         if (!isNextNodeValid)
         {
-            if(nodes[nodeIndex] != null)
+            if (nodes[nodeIndex] != null)
                 isNextNodeValid = true;
             else
                 Debug.LogError("Node at " + nodes[nodeIndex].position + " Is invalid!");
@@ -64,7 +64,7 @@ public class NodePathing : MonoBehaviour
         {
             nodeIndex++;
 
-            if(nodeIndex < nodes.Count)
+            if (nodeIndex < nodes.Count)
                 nextNode = nodes[nodeIndex];
 
             targetAngle = nextNode.position;
@@ -77,14 +77,14 @@ public class NodePathing : MonoBehaviour
     {
         float step = moveSpeed * Time.deltaTime;
         paperPlane.transform.position = Vector3.MoveTowards(paperPlane.transform.position, nodes[nodeIndex].transform.position, step);
-        
-        if(!hasSetNewRotation)
+
+        if (!hasSetNewRotation)
         {
             Vector3 a = new Vector3(100, 0, 0);
             currentAngle = paperPlane.transform.position;
             hasSetNewRotation = true;
         }
-       
+
         Vector3 lookDirection = targetAngle - currentAngle;
         lookDirection.Normalize();
 
