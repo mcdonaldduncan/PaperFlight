@@ -56,19 +56,19 @@ public class SplineWalker : MonoBehaviour
 
     void RotateAlongSpline()
     { 
-        transform.LookAt(transform.position + spline.GetDirection(progress*1.05f)); // 1.05 for better rotation TODO fix
+        transform.LookAt(transform.position + spline.GetDirection(progress)); // 1.05 for better rotation TODO fix
     }
 
     void ChangeSpeed(int i)
     {
         if (progress >= timePoints[i].PointA && progress <= timePoints[i].PointB) // if we are in between A and B
         {
-            totalDuration = Mathf.Lerp(initialDuration, totalDuration * timePoints[i].durationFactor, Time.deltaTime * timePoints[i].durationFactor);
+            totalDuration = Mathf.Lerp(initialDuration, totalDuration * timePoints[i].durationFactor, Time.deltaTime);
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
         }
         else if (progress > timePoints[i].PointB) // set to normal speed
         {
-            totalDuration = Mathf.Lerp(totalDuration, initialDuration, Time.deltaTime * timePoints[i].durationFactor);
+            totalDuration = Mathf.Lerp(totalDuration, initialDuration, Time.deltaTime);
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
         }
     }
