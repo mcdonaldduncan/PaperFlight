@@ -213,9 +213,9 @@ MonoBehaviour:
   - {x: -73.34538, y: -26.544231, z: 94.50134}
   - {x: -88.98789, y: -26.544231, z: 125.04036}
   - {x: -104.6304, y: -26.544231, z: 155.57938}
-  - {x: -112.289215, y: -26.544231, z: 145.79439}
+  - {x: -116.497894, y: -26.544231, z: 145.2478}
   - {x: -111.5472, y: -26.544231, z: 172.56596}
-  - {x: -110.80519, y: -26.544231, z: 199.33754}
+  - {x: -106.59651, y: -26.544231, z: 199.88412}
   - {x: -78.494705, y: -29.025238, z: 232.73935}
   - {x: -74.84421, y: -26.544231, z: 235.14218}
   - {x: -71.19371, y: -24.063225, z: 237.54501}
@@ -1256,7 +1256,7 @@ PrefabInstance:
     - target: {fileID: 5108046502000912141, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.29
+      value: -6.77
       objectReference: {fileID: 0}
     - target: {fileID: 5108046502000912141, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
@@ -1266,7 +1266,7 @@ PrefabInstance:
     - target: {fileID: 5108046502000912141, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.14
+      value: 2.13
       objectReference: {fileID: 0}
     - target: {fileID: 5108046501033427432, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
@@ -1605,7 +1605,7 @@ MonoBehaviour:
     durationFactor: 4
   - PointA: 0.69
     PointB: 0.74
-    durationFactor: 4
+    durationFactor: 2
   - PointA: 0.74
     PointB: 1
     durationFactor: 8
