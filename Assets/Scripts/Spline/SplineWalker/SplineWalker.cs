@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 public class SplineWalker : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class SplineWalker : MonoBehaviour
         public float durationFactor;
     }
     [Tooltip("Plotted points where speed can be adjusted between point A and point B.")] [SerializeField] 
-    private TimePoints[] timePoints;
+    private List<TimePoints> timePoints;
 
     [SerializeField] private BezierSpline spline;
 
@@ -18,7 +19,6 @@ public class SplineWalker : MonoBehaviour
     [SerializeField] private float totalDuration;
 
     private float initialDuration;
-
     private float progress;
 
     private void Start()
@@ -34,29 +34,29 @@ public class SplineWalker : MonoBehaviour
 
     void MoveAlongSpline()
     {
-        if (progress > 1f)
+        if (progress < 1f)
+        {
+            if (timePoints.Count > 0)
+            {
+                for (int i = 0; i < timePoints.Count; i++)
+                {
+                    ChangeSpeed(i);// slow or speed up travel along spline to make things smoother
+                }
+            }
+
+            progress += Time.deltaTime / totalDuration; // iterate current point along spline
+
+            transform.position = spline.GetPoint(progress); // movement - set position to iterated point
+        }
+        else
         {
             progress = 1f; // finished
-        }
-
-        Debug.Log(totalDuration);
-
-        if(timePoints.Length > 0)
-        {
-            for (int i = 0; i < timePoints.Length; i++)
-            {
-                ChangeSpeed(i);// slow or speed up travel along spline to make things smoother
-            }
-        }
-
-        progress += Time.deltaTime / totalDuration;
-
-        transform.position = spline.GetPoint(progress); // movement
+        }      
     }
 
     void RotateAlongSpline()
     { 
-        transform.LookAt(transform.position + spline.GetDirection(progress)); // 1.05 for better rotation TODO fix
+        transform.LookAt(transform.position + spline.GetDirection(progress)); 
     }
 
     void ChangeSpeed(int i)
@@ -66,9 +66,10 @@ public class SplineWalker : MonoBehaviour
             totalDuration = Mathf.Lerp(initialDuration, totalDuration * timePoints[i].durationFactor, Time.deltaTime);
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
         }
-        else if (progress > timePoints[i].PointB) // set to normal speed
+        else if (progress > timePoints[i].PointB) // outside of points, set to default speed
         {
             totalDuration = Mathf.Lerp(totalDuration, initialDuration, Time.deltaTime);
+            timePoints.RemoveAt(i);
             //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
         }
     }
