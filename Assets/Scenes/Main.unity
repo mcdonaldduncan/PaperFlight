@@ -1595,8 +1595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timePointsList:
   - PointA: 0.27
-    PointB: 0.32
-    durationFactor: 25
+    PointB: 0.35
+    durationFactor: 20
   - PointA: 0.5
     PointB: 0.65
     durationFactor: 20

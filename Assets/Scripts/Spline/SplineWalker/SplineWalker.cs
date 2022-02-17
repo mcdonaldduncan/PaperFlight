@@ -22,7 +22,7 @@ public class SplineWalker : MonoBehaviour
 
     private float timeTakenDuringLerp = 4f;
 
-    private float _timeStartedLerping;
+    private float lerpStartTime;
 
     private float initialDuration;
     private float progress;
@@ -87,7 +87,7 @@ public class SplineWalker : MonoBehaviour
 
     void ChangeSpeed()
     {
-        if (timePointsList.Count > 1)
+        if (timePointsList.Count > 1) // todo change to only once
         {
             currentTimePoints = timePointsList[pointIndex];
             nextTimePoints = timePointsList[pointIndex + 1];
@@ -101,7 +101,7 @@ public class SplineWalker : MonoBehaviour
         {
             if(!valuesSet)
             {
-                _timeStartedLerping = Time.time;
+                lerpStartTime = Time.time;
 
                 initialDuration = totalDuration;
 
@@ -111,22 +111,23 @@ public class SplineWalker : MonoBehaviour
                 valuesSet = true;
             }
 
-            if (progress < halfway) // before half
+            if (progress < halfway) // before halfway to point B
             {
-                float timeSinceStarted = Time.time - _timeStartedLerping;
-                float percentageComplete = timeSinceStarted / 1f;
+                float timeSinceStarted = Time.time - lerpStartTime;
+                float percentageComplete = timeSinceStarted;
 
                 totalDuration = Mathf.Lerp(initialDuration, targetDuration, percentageComplete);
             }
-            else //after
+            else //after half to point B
             {
                 if(progress - halfway < .001f) // hacky todo fix
                 {
-                    _timeStartedLerping = Time.time;
-
+                    Debug.Log("AAAAAAA" + Time.time);
+                    lerpStartTime = Time.time;
+                    targetDuration = totalDuration;
                 }
-                float timeSinceStarted = Time.time - _timeStartedLerping;
-                float percentageComplete = timeSinceStarted / 1f;
+                float timeSinceStarted = Time.time - lerpStartTime;
+                float percentageComplete = timeSinceStarted;
 
                 totalDuration = Mathf.Lerp(targetDuration, initialDuration, percentageComplete);
 
@@ -138,27 +139,12 @@ public class SplineWalker : MonoBehaviour
                 }
             }
           
-            //float t = Time.deltaTime * 1 / (progress - nextTimePoints.PointA);
-            //t = t * t * (3f - 2f * t);
-            //totalDuration = Mathf.Lerp(initialDuration, totalDuration * currentTimePoints.durationFactor, t);
+           
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
         }
         else if (progress > currentTimePoints.PointB && progress < nextTimePoints.PointA) // In between two points, speed back up. 2nd half of curve
         {
-            //if (progress > currentTimePoints.PointA && progress < currentTimePoints.PointA + .01f) // super super hacky
-            //{
-            //    _timeStartedLerping = Time.time;
-
-            //    initialDuration = totalDuration;
-            //}
-
-            //float timeSinceStarted = Time.time - _timeStartedLerping;
-            //float percentageComplete = timeSinceStarted / timeTakenDuringLerp;
-
-            ////totalDuration = Mathf.Lerp(totalDuration, initialDuration, percentageComplete);
-            ////float t = Time.deltaTime * 1 / (progress - nextTimePoints.PointA);
-            ////t = t * t * (3f - 2f * t);
-            //totalDuration = Mathf.Lerp(totalDuration, initialDuration, percentageComplete);
+            
             if(valuesSet)
                 valuesSet = false;
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
@@ -182,6 +168,25 @@ public class SplineWalker : MonoBehaviour
 
     }
 }
+
+//float t = Time.deltaTime * 1 / (progress - nextTimePoints.PointA);
+//t = t * t * (3f - 2f * t);
+//totalDuration = Mathf.Lerp(initialDuration, totalDuration * currentTimePoints.durationFactor, t);
+
+//if (progress > currentTimePoints.PointA && progress < currentTimePoints.PointA + .01f) // super super hacky
+//{
+//    _timeStartedLerping = Time.time;
+
+//    initialDuration = totalDuration;
+//}
+
+//float timeSinceStarted = Time.time - _timeStartedLerping;
+//float percentageComplete = timeSinceStarted / timeTakenDuringLerp;
+
+////totalDuration = Mathf.Lerp(totalDuration, initialDuration, percentageComplete);
+////float t = Time.deltaTime * 1 / (progress - nextTimePoints.PointA);
+////t = t * t * (3f - 2f * t);
+//totalDuration = Mathf.Lerp(totalDuration, initialDuration, percentageComplete);
 
 //using System;
 //using System.Collections.Generic;
