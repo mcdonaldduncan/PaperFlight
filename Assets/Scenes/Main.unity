@@ -1596,7 +1596,7 @@ MonoBehaviour:
   timePointsList:
   - PointA: 0.27
     PointB: 0.35
-    durationFactor: 20
+    durationFactor: 50
   - PointA: 0.5
     PointB: 0.65
     durationFactor: 20

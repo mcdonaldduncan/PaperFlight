@@ -37,6 +37,10 @@ public class SplineWalker : MonoBehaviour
     bool targetsSet;
     bool distanceSet = false;
 
+    bool hasReachedPointA = false;
+    bool hasReachedHalfway = false;
+    bool hasReachedPointB = false;
+
     float halfway;
 
     float lerpSpeed;
@@ -48,17 +52,14 @@ public class SplineWalker : MonoBehaviour
         currentTimePoints = timePointsList[0];
     }
 
-    void StartLerping()
-    {
-        
-    }
-
     private void Update()
     {
         MoveAlongSpline();
         RotateAlongSpline();
 
         Debug.Log(totalDuration);
+
+        Debug.Log(pointIndex);
     }
 
     void MoveAlongSpline()
@@ -87,9 +88,97 @@ public class SplineWalker : MonoBehaviour
 
     void ChangeSpeed()
     {
-        if (timePointsList.Count > 1) // todo change to only once
+        if (progress >= currentTimePoints.PointA && progress <= currentTimePoints.PointB) // if we are in between A and B, slow down. 1st half of curve
         {
-            currentTimePoints = timePointsList[pointIndex];
+            if (!hasReachedPointA)
+            {
+                SetLerpValuesAtPointA();
+                hasReachedPointA = true;
+            }
+
+            if (progress < halfway) // before halfway to point B
+            {
+                LerpToHalfway();
+            }
+            else //after half to point B
+            {
+                if (!hasReachedHalfway)
+                {
+                    SetLerpValuesAtHalfway();
+                    hasReachedHalfway = true;
+                }
+
+                LerpToPointB();
+
+                if(totalDuration - initialDuration < .001f) // finished
+                {
+                    if (!hasReachedPointB)
+                    {
+                        SetLerpValuesAtPointB();
+                        hasReachedPointB = true;
+                    }
+                }               
+            }
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
+        }
+        else if (progress > currentTimePoints.PointB && progress < nextTimePoints.PointA) 
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
+        }
+        else // before any time points have been reached or after they are all done
+        {
+            if (hasReachedPointA)
+                hasReachedPointA = false;
+
+            if (hasReachedHalfway)
+                hasReachedHalfway = false;
+
+            if (hasReachedPointB)
+                hasReachedPointB = false;
+
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.blue);
+        }
+    }
+
+    private void SetLerpValuesAtPointA()
+    {
+        lerpStartTime = Time.time;
+
+        initialDuration = totalDuration;
+
+        targetDuration = totalDuration + currentTimePoints.durationFactor;
+
+        halfway = (currentTimePoints.PointA + currentTimePoints.PointB) / 2;
+    }
+
+    private void LerpToHalfway()
+    {
+        float timeSinceStarted = Time.time - lerpStartTime;
+        float percentageComplete = timeSinceStarted;
+
+        totalDuration = Mathf.Lerp(initialDuration, targetDuration, percentageComplete);
+    }
+
+    private void SetLerpValuesAtHalfway()
+    {
+        lerpStartTime = Time.time;
+        targetDuration = totalDuration;
+    }
+    private void LerpToPointB()
+    {
+        float timeSinceStarted = Time.time - lerpStartTime;
+        float percentageComplete = timeSinceStarted;
+
+        totalDuration = Mathf.Lerp(targetDuration, initialDuration, percentageComplete);
+    }
+
+    private void SetLerpValuesAtPointB()
+    {
+        totalDuration = initialDuration;
+        pointIndex++;
+
+        if (pointIndex < timePointsList.Count - 1) // set next
+        {
             nextTimePoints = timePointsList[pointIndex + 1];
         }
         else
@@ -97,77 +186,123 @@ public class SplineWalker : MonoBehaviour
             nextTimePoints = currentTimePoints;
         }
 
-        if (progress >= currentTimePoints.PointA && progress <= currentTimePoints.PointB) // if we are in between A and B, slow down. 1st half of curve
-        {
-            if(!valuesSet)
-            {
-                lerpStartTime = Time.time;
-
-                initialDuration = totalDuration;
-
-                targetDuration = totalDuration + currentTimePoints.durationFactor;
-
-                halfway = (currentTimePoints.PointA + currentTimePoints.PointB) / 2;
-                valuesSet = true;
-            }
-
-            if (progress < halfway) // before halfway to point B
-            {
-                float timeSinceStarted = Time.time - lerpStartTime;
-                float percentageComplete = timeSinceStarted;
-
-                totalDuration = Mathf.Lerp(initialDuration, targetDuration, percentageComplete);
-            }
-            else //after half to point B
-            {
-                if(progress - halfway < .001f) // hacky todo fix
-                {
-                    Debug.Log("AAAAAAA" + Time.time);
-                    lerpStartTime = Time.time;
-                    targetDuration = totalDuration;
-                }
-                float timeSinceStarted = Time.time - lerpStartTime;
-                float percentageComplete = timeSinceStarted;
-
-                totalDuration = Mathf.Lerp(targetDuration, initialDuration, percentageComplete);
-
-                if (totalDuration - initialDuration < .001f) // finished
-                {
-                    totalDuration = initialDuration;
-                    //timePointsList.RemoveAt(pointIndex);
-                    currentTimePoints = timePointsList[pointIndex];
-                }
-            }
-          
-           
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
-        }
-        else if (progress > currentTimePoints.PointB && progress < nextTimePoints.PointA) // In between two points, speed back up. 2nd half of curve
-        {
-            
-            if(valuesSet)
-                valuesSet = false;
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
-        }
-        else // before any time points have been reached or after they are all done
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.blue);
-        }
-    }
-
-    float GetDistanceToNextTimePoint() // do once
-    {
-        if (timePointsList.Count > 1) // if there is a next time point
-        {
-            return timePointsList[pointIndex + 1].PointA - currentTimePoints.PointB;
-        }
-        else
-        {
-            return .5f;
-        }
-
+        currentTimePoints = timePointsList[pointIndex];
     }
 }
+//    private void Start()
+//    {
+//        initialDuration = totalDuration;
+//        currentTimePoints = timePointsList[0];
+//    }
+//    private void Update()
+//    {
+//        MoveAlongSpline();
+//        RotateAlongSpline();
+
+//        //Debug.Log(Mathf.Round(progress * 100f) / 100f);
+//        //Debug.Log(nextTimePoints.PointA + " " + nextTimePoints.PointB);
+
+
+
+//        if (Mathf.Round(progress * 100f) / 100f == halfway)
+//        {
+//            lerpStartTime = Time.time;
+//            targetDuration = totalDuration;
+//        }
+//    }
+
+//    void MoveAlongSpline()
+//    {
+//        if (progress < 1f)
+//        {
+//            if (timePointsList.Count > 0)
+//            {
+//                ChangeSpeed();// slow or speed up travel along spline to make things smoother
+//            }
+
+//            progress += Time.deltaTime / totalDuration; // iterate current point along spline
+
+//            transform.position = spline.GetPoint(progress); // movement - set position to iterated point
+//        }
+//        else
+//        {
+//            progress = 1f; // finished
+//        }
+//    }
+
+//    void RotateAlongSpline()
+//    {
+//        transform.LookAt(transform.position + spline.GetDirection(progress));
+//    }
+
+//    void ChangeSpeed()
+//    {
+//        if (timePointsList.Count > 1) // todo change to only once
+//        {
+//            currentTimePoints = timePointsList[pointIndex];
+//            nextTimePoints = timePointsList[pointIndex + 1];
+//        }
+//        else
+//        {
+//            nextTimePoints = currentTimePoints;
+//        }
+
+//        if (progress >= currentTimePoints.PointA && progress <= currentTimePoints.PointB) // if we are in between A and B, slow down. 1st half of curve
+//        {
+//            if(!valuesSet)
+//            {
+//                lerpStartTime = Time.time;
+
+//                initialDuration = totalDuration;
+
+//                targetDuration = totalDuration + currentTimePoints.durationFactor;
+
+//                halfway = (currentTimePoints.PointA + currentTimePoints.PointB) / 2;
+
+//                halfwayPosition = new Vector3(spline.GetPoint(halfway).x, spline.GetPoint(halfway).y, spline.GetPoint(halfway).z);
+
+//                Debug.Log("HALF " + halfwayPosition);
+
+//                valuesSet = true;
+//            }
+
+//            if (progress < halfway) // before halfway to point B
+//            {
+//                float timeSinceStarted = Time.time - lerpStartTime;
+//                float percentageComplete = timeSinceStarted;
+
+//                totalDuration = Mathf.Lerp(initialDuration, targetDuration, percentageComplete);
+//            }
+//            else //after half to point B
+//            {              
+//                float timeSinceStarted = Time.time - lerpStartTime;
+//                float percentageComplete = timeSinceStarted;
+
+//                totalDuration = Mathf.Lerp(targetDuration, initialDuration, percentageComplete);
+
+//                if (totalDuration - initialDuration < .0001f) // finished
+//                {
+//                    totalDuration = initialDuration;
+//                    //timePointsList.RemoveAt(pointIndex);
+//                    pointIndex++;
+//                    currentTimePoints = timePointsList[pointIndex];
+//                }
+//            }          
+
+//            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
+//        }
+//        else if (progress > currentTimePoints.PointB && progress < nextTimePoints.PointA) // In between two points
+//        {           
+//            if(valuesSet)
+//                valuesSet = false;
+//            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
+//        }
+//        else // before any time points have been reached or after they are all done
+//        {
+//            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.blue);
+//        }
+//    }
+//}
 
 //float t = Time.deltaTime * 1 / (progress - nextTimePoints.PointA);
 //t = t * t * (3f - 2f * t);
