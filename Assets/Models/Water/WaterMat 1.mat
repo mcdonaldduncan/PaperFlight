@@ -140,10 +140,9 @@ Material:
     m_Colors:
     - Color_5BD905AC: {r: 0, g: 0, b: 0, a: 0}
     - Color_5C386CFC: {r: 0.27808988, g: 0.43876404, b: 0.55, a: 0}
-    - Color_61268B0F: {r: 0.40784317, g: 0.6039216, b: 0.7411765, a: 0}
+    - Color_61268B0F: {r: 0.36250502, g: 0.44822243, b: 0.507, a: 0}
     - Color_E5D4DA52: {r: 0.1254902, g: 0.22352943, b: 0.30980393, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-  m_BuildTextureStacks: []
