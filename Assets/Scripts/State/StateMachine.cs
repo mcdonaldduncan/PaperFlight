@@ -17,6 +17,7 @@ public class StateMachine : MonoBehaviour
         AddState("Idle");
         AddState("Flying");
         AddState("Turning");
+        AddState("Collision");
     }
 
     // Update is called once per frame
