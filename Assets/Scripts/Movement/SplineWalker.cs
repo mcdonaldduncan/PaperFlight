@@ -25,23 +25,16 @@ public class SplineWalker : MonoBehaviour
     private float initialDuration;
     private float progress;
     private TimePoints currentTimePoints;
-    private TimePoints nextTimePoints;
 
     private float targetDuration;
 
-    private bool valuesSet;
-
     private int pointIndex = 0;
-    bool targetsSet;
-    bool distanceSet = false;
 
     bool hasReachedPointA = false;
     bool hasReachedHalfway = false;
     bool hasReachedPointB = false;
 
     float halfway;
-
-    float lerpSpeed;
 
     private void Start()
     {
@@ -56,8 +49,7 @@ public class SplineWalker : MonoBehaviour
         RotateAlongSpline();
 
         Debug.Log(totalDuration);
-
-        Debug.Log(pointIndex);
+        Debug.Log(progress);
     }
 
     void MoveAlongSpline()
@@ -117,7 +109,7 @@ public class SplineWalker : MonoBehaviour
                     }
                 }               
             }
-           // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
         }
         else // before any time points have been reached or after they are all done
         {
@@ -171,14 +163,14 @@ public class SplineWalker : MonoBehaviour
         totalDuration = initialDuration;
         pointIndex++;
 
-        if (pointIndex < timePointsList.Count - 1) // set next
-        {
-            nextTimePoints = timePointsList[pointIndex + 1];
-        }
-        else
-        {
-            nextTimePoints = currentTimePoints;
-        }
+        //if (pointIndex < timePointsList.Count - 1) // set next
+        //{
+        //    nextTimePoints = timePointsList[pointIndex + 1];
+        //}
+        //else
+        //{
+        //    nextTimePoints = currentTimePoints;
+        //}
 
         currentTimePoints = timePointsList[pointIndex];
     }
