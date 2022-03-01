@@ -85,7 +85,8 @@ public class SplineWalker : MonoBehaviour
 
     void RotateAlongSpline()
     {
-        transform.LookAt(transform.position + spline.GetDirection(progress));
+        transform.LookAt(transform.position + spline.GetDirection(progress), spline.GetDirection(progress));
+        //transform.LookAt(transform.position + spline.GetDirection(progress));
     }    
 
     void ChangeSpeed()
