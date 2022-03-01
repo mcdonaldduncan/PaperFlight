@@ -4,25 +4,21 @@ using UnityEngine;
 public class SplineWalker : MonoBehaviour
 {
     [Serializable]
-    public struct TimePoints
+    private struct TimePoints
     {
         [Tooltip("Start Point")] public float PointA;
         [Tooltip("End Point")] public float PointB;
         [Tooltip("Amount of slow added. A higher number means slower speed in between those points.")]
         public float durationFactor;
     }
-    [Tooltip("Plotted points where speed can be adjusted between point A and point B.")]
-    [SerializeField]
-    private List<TimePoints> timePointsList;
 
-    [SerializeField] private BezierSpline spline;
+    [Tooltip("Plotted points where speed can be adjusted between point A and point B.")]
+    [SerializeField] private List<TimePoints> timePointsList;
 
     [Tooltip("The total amount of duration of the plane's journey from the start to end of a spline.")]
     [SerializeField] private float totalDuration;
 
-    [SerializeField] private Transform nTransform;
-
-    private float timeTakenDuringLerp = 4f;
+    [SerializeField] private BezierSpline spline;
 
     private float lerpStartTime;
 
@@ -86,7 +82,6 @@ public class SplineWalker : MonoBehaviour
     void RotateAlongSpline()
     {
         transform.LookAt(transform.position + spline.GetDirection(progress), spline.GetDirection(progress));
-        //transform.LookAt(transform.position + spline.GetDirection(progress));
     }    
 
     void ChangeSpeed()
@@ -122,11 +117,7 @@ public class SplineWalker : MonoBehaviour
                     }
                 }               
             }
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
-        }
-        else if (progress > currentTimePoints.PointB && progress < nextTimePoints.PointA) 
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
+           // Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
         }
         else // before any time points have been reached or after they are all done
         {
@@ -139,7 +130,7 @@ public class SplineWalker : MonoBehaviour
             if (hasReachedPointB)
                 hasReachedPointB = false;
 
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.blue);
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.blue);
         }
     }
 
