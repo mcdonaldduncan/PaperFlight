@@ -20,6 +20,8 @@ public class SplineWalker : MonoBehaviour
     [Tooltip("The total amount of duration of the plane's journey from the start to end of a spline.")]
     [SerializeField] private float totalDuration;
 
+    [SerializeField] private Transform nTransform;
+
     private float timeTakenDuringLerp = 4f;
 
     private float lerpStartTime;
@@ -31,18 +33,11 @@ public class SplineWalker : MonoBehaviour
 
     private float targetDuration;
 
-    private float lastYRotation = 0;
-    private float rollSpeed;
-    private Transform rotN;
-
     private bool valuesSet;
 
     private int pointIndex = 0;
     bool targetsSet;
     bool distanceSet = false;
-
-    float rollAngle;
-    float rateOfChange = .0008f;
 
     bool hasReachedPointA = false;
     bool hasReachedHalfway = false;
@@ -56,11 +51,7 @@ public class SplineWalker : MonoBehaviour
     {
         initialDuration = totalDuration;
 
-        if(timePointsList.Count > 0)
-            currentTimePoints = timePointsList[0];
-
-        lastYRotation = transform.rotation.eulerAngles.y;
-        rotN = transform.GetChild(1).GetChild(0).GetChild(0);
+        currentTimePoints = timePointsList[0];
     }
 
     private void Update()
@@ -68,9 +59,9 @@ public class SplineWalker : MonoBehaviour
         MoveAlongSpline();
         RotateAlongSpline();
 
-        //Debug.Log(totalDuration);
+        Debug.Log(totalDuration);
 
-        //Debug.Log(pointIndex);
+        Debug.Log(pointIndex);
     }
 
     void MoveAlongSpline()
@@ -94,12 +85,9 @@ public class SplineWalker : MonoBehaviour
 
     void RotateAlongSpline()
     {
-        transform.LookAt((transform.position + spline.GetDirection(progress)), spline.GetDirection(progress)); // rotates pitch and yaw
-
-        //RotateRoll();
-
-        Debug.DrawRay(spline.GetPoint(progress), new Vector3(0, spline.GetPoint(progress).y * 10, 0), Color.yellow);
-    }
+        transform.LookAt(transform.position + spline.GetDirection(progress), spline.GetDirection(progress));
+        //transform.LookAt(transform.position + spline.GetDirection(progress));
+    }    
 
     void ChangeSpeed()
     {
@@ -125,16 +113,20 @@ public class SplineWalker : MonoBehaviour
 
                 LerpToPointB();
 
-                if (totalDuration - initialDuration < .001f) // finished
+                if(totalDuration - initialDuration < .001f) // finished
                 {
                     if (!hasReachedPointB)
                     {
                         SetLerpValuesAtPointB();
                         hasReachedPointB = true;
                     }
-                }
+                }               
             }
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
+        }
+        else if (progress > currentTimePoints.PointB && progress < nextTimePoints.PointA) 
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
         }
         else // before any time points have been reached or after they are all done
         {
@@ -188,58 +180,16 @@ public class SplineWalker : MonoBehaviour
         totalDuration = initialDuration;
         pointIndex++;
 
-        //if (pointIndex < timePointsList.Count - 1) // set next
-        //{
-        //    nextTimePoints = timePointsList[pointIndex + 1];
-        //}
-        //else
-        //{
-        //    nextTimePoints = currentTimePoints;
-        //}
+        if (pointIndex < timePointsList.Count - 1) // set next
+        {
+            nextTimePoints = timePointsList[pointIndex + 1];
+        }
+        else
+        {
+            nextTimePoints = currentTimePoints;
+        }
 
         currentTimePoints = timePointsList[pointIndex];
-    }
-
-    void RotateRoll()
-    {
-        rollSpeed = Mathf.Abs(lastYRotation - this.transform.rotation.eulerAngles.y);
-
-        //float test = 5;
-
-        //if (rollSpeed > 1.5)
-        //    rollSpeed = 1.5f;
-
-        //if (lastYRotation < this.transform.rotation.eulerAngles.y) // Angle larger than 5 and increasing
-        //{
-        //    rateOfChange = rollSpeed * .5f;
-        //    rollSpeed -= rateOfChange;           
-        //    Debug.Log("Rate " + rateOfChange);
-        //}
-        //else if (lastYRotation > this.transform.rotation.eulerAngles.y) // Angle less than 5 and decreasing
-        //{
-        //    rateOfChange = rollSpeed * .5f;
-        //    rollSpeed -= rateOfChange;
-        //    Debug.Log("Rate " + rateOfChange);
-        //}
-
-        //if (rollSpeed < 0)
-        //    rollSpeed = 0;
-
-        //if (rollAngle > 22)
-        //    rollAngle = 22;
-        //else if (rollAngle < -22)
-        //    rollAngle = -22;
-          
-            //Debug.Log(rollSpeed);
-
-        //if (lastYRotation > this.transform.rotation.eulerAngles.y)
-        //    rollAngle -= rollSpeed;                                     //decreasing
-        //else
-        //    rollAngle += rollSpeed;                                     //increasing
-
-        //lastYRotation = this.transform.rotation.eulerAngles.y;
-
-        //rotN.gameObject.transform.localRotation = Quaternion.Euler(rollAngle, 0, 0);
     }
 }
 //    private void Start()
