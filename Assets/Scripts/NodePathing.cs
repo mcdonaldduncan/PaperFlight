@@ -39,7 +39,7 @@ public class NodePathing : MonoBehaviour
         {
             progress = 1f;
         }
-        Debug.Log(spline.GetPoint(progress));
+        //Debug.Log(spline.GetPoint(progress));
         // We have reached the end
         if (nodeIndex < nodes.Count)
         {
