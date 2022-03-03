@@ -461,7 +461,7 @@ MonoBehaviour:
   - PointA: 28
     PointB: 31
     durationFactor: 10
-  totalDuration: 60
+  totalDuration: 2
   spline: {fileID: 477256474}
 --- !u!114 &106385928
 MonoBehaviour:
