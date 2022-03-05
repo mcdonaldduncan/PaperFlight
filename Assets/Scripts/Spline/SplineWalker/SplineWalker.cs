@@ -20,6 +20,8 @@ public class SplineWalker : MonoBehaviour
     [Tooltip("The total amount of duration of the plane's journey from the start to end of a spline.")]
     [SerializeField] private float totalDuration;
 
+    [SerializeField] private Transform nTransform;
+
     private float timeTakenDuringLerp = 4f;
 
     private float lerpStartTime;
@@ -83,8 +85,9 @@ public class SplineWalker : MonoBehaviour
 
     void RotateAlongSpline()
     {
-        transform.LookAt(transform.position + spline.GetDirection(progress));
-    }
+        transform.LookAt(transform.position + spline.GetDirection(progress), spline.GetDirection(progress));
+        //transform.LookAt(transform.position + spline.GetDirection(progress));
+    }    
 
     void ChangeSpeed()
     {
