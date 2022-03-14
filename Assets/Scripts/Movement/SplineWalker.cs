@@ -4,48 +4,37 @@ using UnityEngine;
 public class SplineWalker : MonoBehaviour
 {
     [Serializable]
-    public struct TimePoints
+    private struct TimePoints
     {
         [Tooltip("Start Point")] public float PointA;
         [Tooltip("End Point")] public float PointB;
         [Tooltip("Amount of slow added. A higher number means slower speed in between those points.")]
         public float durationFactor;
     }
-    [Tooltip("Plotted points where speed can be adjusted between point A and point B.")]
-    [SerializeField]
-    private List<TimePoints> timePointsList;
 
-    [SerializeField] private BezierSpline spline;
+    [Tooltip("Plotted points where speed can be adjusted between point A and point B.")]
+    [SerializeField] private List<TimePoints> timePointsList;
 
     [Tooltip("The total amount of duration of the plane's journey from the start to end of a spline.")]
     [SerializeField] private float totalDuration;
 
-    [SerializeField] private Transform nTransform;
-
-    private float timeTakenDuringLerp = 4f;
+    [SerializeField] private BezierSpline spline;
 
     private float lerpStartTime;
 
     private float initialDuration;
     private float progress;
     private TimePoints currentTimePoints;
-    private TimePoints nextTimePoints;
 
     private float targetDuration;
 
-    private bool valuesSet;
-
     private int pointIndex = 0;
-    bool targetsSet;
-    bool distanceSet = false;
 
     bool hasReachedPointA = false;
     bool hasReachedHalfway = false;
     bool hasReachedPointB = false;
 
     float halfway;
-
-    float lerpSpeed;
 
     private void Start()
     {
@@ -60,8 +49,7 @@ public class SplineWalker : MonoBehaviour
         RotateAlongSpline();
 
         Debug.Log(totalDuration);
-
-        Debug.Log(pointIndex);
+        Debug.Log(progress);
     }
 
     void MoveAlongSpline()
@@ -86,7 +74,6 @@ public class SplineWalker : MonoBehaviour
     void RotateAlongSpline()
     {
         transform.LookAt(transform.position + spline.GetDirection(progress), spline.GetDirection(progress));
-        //transform.LookAt(transform.position + spline.GetDirection(progress));
     }    
 
     void ChangeSpeed()
@@ -124,10 +111,6 @@ public class SplineWalker : MonoBehaviour
             }
             Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.yellow);
         }
-        else if (progress > currentTimePoints.PointB && progress < nextTimePoints.PointA) 
-        {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
-        }
         else // before any time points have been reached or after they are all done
         {
             if (hasReachedPointA)
@@ -139,7 +122,7 @@ public class SplineWalker : MonoBehaviour
             if (hasReachedPointB)
                 hasReachedPointB = false;
 
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.blue);
+            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.blue);
         }
     }
 
@@ -180,14 +163,14 @@ public class SplineWalker : MonoBehaviour
         totalDuration = initialDuration;
         pointIndex++;
 
-        if (pointIndex < timePointsList.Count - 1) // set next
-        {
-            nextTimePoints = timePointsList[pointIndex + 1];
-        }
-        else
-        {
-            nextTimePoints = currentTimePoints;
-        }
+        //if (pointIndex < timePointsList.Count - 1) // set next
+        //{
+        //    nextTimePoints = timePointsList[pointIndex + 1];
+        //}
+        //else
+        //{
+        //    nextTimePoints = currentTimePoints;
+        //}
 
         currentTimePoints = timePointsList[pointIndex];
     }
