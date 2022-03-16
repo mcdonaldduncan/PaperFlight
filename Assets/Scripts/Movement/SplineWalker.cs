@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Liminal.SDK.VR;
+using Liminal.SDK.VR.Input;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 public class SplineWalker : MonoBehaviour
@@ -36,6 +38,11 @@ public class SplineWalker : MonoBehaviour
 
     float halfway;
 
+    public bool usingControllers;
+    private IVRInputDevice inputDevice;
+    private float triggerInputValue;
+
+
     private void Start()
     {
         speed /= 1000;
@@ -52,6 +59,9 @@ public class SplineWalker : MonoBehaviour
 
         Debug.Log(speed);
         Debug.Log(progress);
+
+        if(usingControllers)
+            SetTriggerInputValue();
     }
 
     void MoveAlongSpline()
@@ -75,8 +85,7 @@ public class SplineWalker : MonoBehaviour
 
     void RotateAlongSpline()
     {
-        transform.LookAt(transform.position + spline.GetDirection(progress),
-            spline.GetDirection(progress)); // set up vector as the direction to the next point so that we get Z axis rotation
+        transform.LookAt(transform.position + spline.GetDirection(progress));
     }
 
     void ChangeSpeed()
@@ -166,5 +175,15 @@ public class SplineWalker : MonoBehaviour
             pointIndex++;
             currentTimePoints = timePointsList[pointIndex];
         }
+    }
+    private void SetTriggerInputValue()
+    {
+        if (inputDevice == null)
+        {
+            inputDevice = VRDevice.Device.PrimaryInputDevice;
+            return;
+        }
+
+        speed /= (1 + inputDevice.GetAxis1D(VRAxis.Two));
     }
 }
