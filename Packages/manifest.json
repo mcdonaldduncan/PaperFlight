@@ -8,7 +8,7 @@
     "com.unity.render-pipelines.lightweight": "5.16.1",
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.timeline": "1.0.0",
-    "com.unity.xr.oculus.android": "1.38.4",
+    "com.unity.xr.oculus.android": "1.38.6",
     "com.unity.xr.oculus.standalone": "1.38.4",
     "com.unity.xr.openvr.standalone": "1.0.5",
     "com.unity.modules.ai": "1.0.0",
@@ -44,7 +44,7 @@
   },
   "lock": {
     "com.liminal.sdk": {
-      "hash": "18dbd62b37322d4aeb506a2c1c67349e6e54a4b3",
+      "hash": "f3d68e9ffc68f18dec4903f0622e7b7425c24152",
       "revision": "develop"
     }
   }
