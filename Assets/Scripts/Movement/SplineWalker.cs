@@ -49,7 +49,7 @@ public class SplineWalker : MonoBehaviour
 
         initialSpeed = speed;
 
-        currentTimePoints = timePointsList[0];
+        //currentTimePoints = timePointsList[0];
     }
 
     private void Update()
@@ -57,8 +57,8 @@ public class SplineWalker : MonoBehaviour
         MoveAlongSpline();
         RotateAlongSpline();
 
-        Debug.Log(speed);
-        Debug.Log(progress);
+        //Debug.Log(speed);
+        //Debug.Log(progress);
 
         if(usingControllers)
             SetTriggerInputValue();
@@ -184,6 +184,22 @@ public class SplineWalker : MonoBehaviour
             return;
         }
 
-        speed /= (1 + inputDevice.GetAxis1D(VRAxis.Two));
+        Debug.Log(VRDevice.DeviceName);
+
+        //Debug.Log(inputDevice.Name);
+
+        //speed /= (1 + inputDevice.GetAxis1D(VRAxis.Two));
+        //inputDevice.
+        //Debug.Log(inputDevice.GetAxis1D(VRAxis.OneRaw));
+        //Debug.Log(inputDevice.GetAxis2D(VRAxis.OneRaw));
+        //Debug.Log(inputDevice.GetAxis1D(VRAxis.TwoRaw));
+        //Debug.Log(inputDevice.GetAxis2D(VRAxis.TwoRaw));
+        //Debug.Log(inputDevice.GetAxis1D(VRAxis.ThreeRaw));
+        //Debug.Log(inputDevice.GetAxis2D(VRAxis.ThreeRaw));
+
+        Debug.Log(inputDevice.GetButtonDown(VRButton.Trigger));
+
+
+        // Debug.Log(inputDevice.GetAxis1D(VRAxis.Two));
     }
 }
