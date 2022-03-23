@@ -178,6 +178,7 @@ public class SplineWalker : MonoBehaviour
     }
     private void SetTriggerInputValue()
     {
+        float maxSpeed = initialSpeed;
         if (inputDevice == null)
         {
             inputDevice = VRDevice.Device.PrimaryInputDevice;
@@ -188,7 +189,7 @@ public class SplineWalker : MonoBehaviour
 
         //Debug.Log(inputDevice.Name);
 
-        //speed /= (1 + inputDevice.GetAxis1D(VRAxis.Two));
+        speed = maxSpeed / (1 + inputDevice.GetAxis1D(VRAxis.Two));
         //inputDevice.
         //Debug.Log(inputDevice.GetAxis1D(VRAxis.OneRaw));
         //Debug.Log(inputDevice.GetAxis2D(VRAxis.OneRaw));
