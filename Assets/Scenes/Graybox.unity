@@ -4597,9 +4597,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b73085d978a8d04584afcbaa97e2817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timePointsList: []
+  timePointsList:
+  - PointA: 0.2
+    PointB: 0.21
+    targetSpeed: 19
   speed: 20
   spline: {fileID: 1554746613}
+  usingControllers: 1
 --- !u!1001 &1269867577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5827,7 +5831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BuildType: 2
-  EditorType: 1
+  EditorType: 2
 --- !u!114 &1676988089
 MonoBehaviour:
   m_ObjectHideFlags: 0
