@@ -11,24 +11,24 @@ public class SplineWalker : MonoBehaviour
         [Tooltip("Start Point percentage e.g. .1")] public float PointA;
         [Tooltip("End Point percentage e.g. .2")] public float PointB;
         [Tooltip("The speed which we will descend to halfway between pointA and pointB.")]
-        public float targetDuration;
+        public float targetSpeed;
     }
 
     [Tooltip("Plotted points where speed can be adjusted between point A and point B.")]
     [SerializeField] private List<TimePoints> timePointsList;
 
     [Tooltip("The total amount of duration of the plane's journey from the start to end of a spline.")]
-    [SerializeField] private float duration;
+    [SerializeField] private float speed;
 
     [SerializeField] private BezierSpline spline;
 
     private float lerpStartTime;
-    private float initialDuration;
+    private float initialSpeed;
     private float progress;
 
     private TimePoints currentTimePoints;
 
-    private float targetDuration;
+    private float targetSpeed;
 
     private int pointIndex = 0;
 
@@ -45,11 +45,11 @@ public class SplineWalker : MonoBehaviour
 
     private void Start()
     {
-        initialDuration = duration;
+        speed /= 1000;
 
-        currentTimePoints = timePointsList[0];
+        initialSpeed = speed;
 
-        OVRManager.instance.useRecommendedMSAALevel = false;
+        //currentTimePoints = timePointsList[0];
     }
 
     private void Update()
@@ -58,18 +58,10 @@ public class SplineWalker : MonoBehaviour
         RotateAlongSpline();
 
         //Debug.Log(speed);
-        ////Debug.Log(progress);
-        //if (inputDevice == null)
-        //{
-        //    inputDevice = VRDevice.Device.PrimaryInputDevice;
-        //}
+        //Debug.Log(progress);
 
-        //Debug.Log(VRDevice.DeviceName);
-
-        //Debug.Log(inputDevice.GetAxis1D(VRAxis.Two));
-
-        //if (usingControllers)
-        //    SetTriggerInputValue();
+        if(usingControllers)
+            SetTriggerInputValue();
     }
 
     void MoveAlongSpline()
@@ -81,7 +73,7 @@ public class SplineWalker : MonoBehaviour
                 ChangeSpeed();// slow or speed up travel along spline to make things smoother
             }
 
-            progress += Time.deltaTime / duration; // iterate current point along spline
+            progress += Time.deltaTime * speed; // iterate current point along spline
 
             transform.position = spline.GetPoint(progress); // movement - set position to iterated point
         }
@@ -120,7 +112,7 @@ public class SplineWalker : MonoBehaviour
 
                 LerpToPointB();
 
-                if (initialDuration - duration < .001f) // finished
+                if (initialSpeed - speed < .001f) // finished
                 {
                     if (!hasReachedPointB)
                     {
@@ -147,7 +139,9 @@ public class SplineWalker : MonoBehaviour
     {
         lerpStartTime = Time.time;
 
-        initialDuration = duration;
+        initialSpeed = speed;
+
+        targetSpeed = currentTimePoints.targetSpeed / 1000;
 
         halfway = (currentTimePoints.PointA + currentTimePoints.PointB) / 2;
     }
@@ -157,25 +151,25 @@ public class SplineWalker : MonoBehaviour
         float timeSinceStarted = Time.time - lerpStartTime;
         float percentageComplete = timeSinceStarted;
 
-        duration = Mathf.Lerp(initialDuration, targetDuration, percentageComplete);
+        speed = Mathf.Lerp(initialSpeed, targetSpeed, percentageComplete);
     }
 
     private void SetLerpValuesAtHalfway()
     {
         lerpStartTime = Time.time;
-        targetDuration = duration;
+        targetSpeed = speed;
     }
     private void LerpToPointB()
     {
         float timeSinceStarted = Time.time - lerpStartTime;
         float percentageComplete = timeSinceStarted;
 
-        duration = Mathf.Lerp(targetDuration, initialDuration, percentageComplete);
+        speed = Mathf.Lerp(targetSpeed, initialSpeed, percentageComplete);
     }
 
     private void SetLerpValuesAtPointB()
     {
-        duration = initialDuration;
+        speed = initialSpeed;
         if(pointIndex != timePointsList.Count -1)
         {
             pointIndex++;
@@ -184,16 +178,29 @@ public class SplineWalker : MonoBehaviour
     }
     private void SetTriggerInputValue()
     {
+        float maxSpeed = initialSpeed;
         if (inputDevice == null)
         {
             inputDevice = VRDevice.Device.PrimaryInputDevice;
             return;
         }
 
-        //Debug.Log(VRDevice.DeviceName);
+        Debug.Log(VRDevice.DeviceName);
 
         //Debug.Log(inputDevice.Name);
 
-        //speed /= (1 + inputDevice.GetAxis1D(VRAxis.Two));
+        speed = maxSpeed / (1 + inputDevice.GetAxis1D(VRAxis.Two));
+        //inputDevice.
+        //Debug.Log(inputDevice.GetAxis1D(VRAxis.OneRaw));
+        //Debug.Log(inputDevice.GetAxis2D(VRAxis.OneRaw));
+        //Debug.Log(inputDevice.GetAxis1D(VRAxis.TwoRaw));
+        //Debug.Log(inputDevice.GetAxis2D(VRAxis.TwoRaw));
+        //Debug.Log(inputDevice.GetAxis1D(VRAxis.ThreeRaw));
+        //Debug.Log(inputDevice.GetAxis2D(VRAxis.ThreeRaw));
+
+        Debug.Log(inputDevice.GetButtonDown(VRButton.Trigger));
+
+
+        // Debug.Log(inputDevice.GetAxis1D(VRAxis.Two));
     }
 }
