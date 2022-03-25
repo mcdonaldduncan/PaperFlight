@@ -530,7 +530,7 @@ MonoBehaviour:
   timePointsList: []
   speed: 10
   spline: {fileID: 1390707911}
-  usingControllers: 0
+  usingControllers: 1
 --- !u!82 &106385928
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1112,7 +1112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 554.4
+      value: 556.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4142,8 +4142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 258177696}
-  xOffset: -2.5
-  yOffset: 0
+  xOffset: -0.5
+  yOffset: -0.4
   zOffset: 0
   rotationDelta: 2
 --- !u!1001 &1154563478
@@ -5131,29 +5131,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: 1, y: 0, z: 6.529869}
-  - {x: 18.235565, y: 0, z: -1.545166}
+  - {x: 1, y: 0, z: 4.4954605}
+  - {x: 18.235565, y: 0, z: -3.5795746}
   - {x: 27.521622, y: 0, z: -4.1706696}
   - {x: 48.58394, y: 0, z: -4.1706696}
   - {x: 69.646255, y: 0, z: -4.1706696}
   - {x: 91.171005, y: 0, z: 2.25663}
   - {x: 110.41513, y: 0, z: 4.2012787}
   - {x: 129.65926, y: 0, z: 6.1459274}
-  - {x: 147.4138, y: -1.3224125, z: 1.2161102}
-  - {x: 166.32838, y: -2.0122738, z: 1.9051666}
-  - {x: 185.24297, y: -2.702135, z: 2.594223}
-  - {x: 234.4031, y: -3.3020763, z: 5.3611298}
-  - {x: 254.55278, y: -3.3020763, z: 3.928543}
-  - {x: 274.70245, y: -3.3020763, z: 2.4959564}
+  - {x: 147.4138, y: -3.3836899, z: 1.2161102}
+  - {x: 166.32838, y: -4.073551, z: 1.9051666}
+  - {x: 185.24297, y: -4.7634125, z: 2.594223}
+  - {x: 234.4031, y: -7.0861607, z: 5.3611298}
+  - {x: 254.55278, y: -7.0861607, z: 3.928543}
+  - {x: 274.70245, y: -7.0861607, z: 2.4959564}
   - {x: 296.63196, y: -3.3020763, z: -7.444092}
   - {x: 319.4231, y: -3.3020763, z: -1.595581}
   - {x: 342.21423, y: -3.3020763, z: 4.2529297}
-  - {x: 358.56354, y: -7.1636105, z: 7.2036285}
-  - {x: 365.5329, y: -13.473753, z: 29.400772}
-  - {x: 372.50226, y: -19.783895, z: 51.597916}
-  - {x: 372.29358, y: -27.393063, z: 80.67384}
-  - {x: 399.44043, y: -29.758059, z: 86.152725}
-  - {x: 426.58728, y: -32.123055, z: 91.63161}
+  - {x: 353.38654, y: -7.1636105, z: 7.2036285}
+  - {x: 360.3559, y: -13.473753, z: 29.400772}
+  - {x: 367.32526, y: -19.783895, z: 51.597916}
+  - {x: 372.7406, y: -27.393063, z: 80.67384}
+  - {x: 399.88745, y: -29.758059, z: 86.152725}
+  - {x: 427.0343, y: -32.123055, z: 91.63161}
   - {x: 435.13135, y: -36.775024, z: 91.4115}
   - {x: 457.5244, y: -39.073837, z: 82.42703}
   - {x: 479.91748, y: -41.37265, z: 73.442566}
@@ -6244,7 +6244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BuildType: 2
-  EditorType: 1
+  EditorType: 2
 --- !u!114 &1676988089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6478,7 +6478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.9
+      value: -41.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
       propertyPath: m_LocalRotation.x

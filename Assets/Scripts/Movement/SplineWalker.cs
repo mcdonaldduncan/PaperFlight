@@ -188,15 +188,14 @@ public class SplineWalker : MonoBehaviour
         Debug.Log(VRDevice.DeviceName);
 
         //Debug.Log(inputDevice.Name);
+        float step = Time.deltaTime * .005f;
 
-        speed = maxSpeed / (1 + inputDevice.GetAxis1D(VRAxis.Two));
-        //inputDevice.
-        //Debug.Log(inputDevice.GetAxis1D(VRAxis.OneRaw));
-        //Debug.Log(inputDevice.GetAxis2D(VRAxis.OneRaw));
-        //Debug.Log(inputDevice.GetAxis1D(VRAxis.TwoRaw));
-        //Debug.Log(inputDevice.GetAxis2D(VRAxis.TwoRaw));
-        //Debug.Log(inputDevice.GetAxis1D(VRAxis.ThreeRaw));
-        //Debug.Log(inputDevice.GetAxis2D(VRAxis.ThreeRaw));
+        float speedGoal = maxSpeed / (1 + inputDevice.GetAxis1D(VRAxis.Two));
+
+        speed = Mathf.MoveTowards(speed, speedGoal, step);
+
+
+        //speed = maxSpeed / (1 + inputDevice.GetAxis1D(VRAxis.Two) * 5);
 
         Debug.Log(inputDevice.GetButtonDown(VRButton.Trigger));
 
