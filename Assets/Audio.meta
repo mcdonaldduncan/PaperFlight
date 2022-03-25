@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Audio.meta
 guid: 2fdbcffbe86ec1846b946bbd47e6d522
+=======
+guid: 15353b657d9576b468d41eae8e860aeb
+>>>>>>> master:Assets/Models/ForestArea.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
