@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Materials/NewRocks.mat.meta
 guid: a3657afa25c0fb440914f8aa03380517
+=======
+guid: 3b7e2691e83773246af7fb02ddd23b6d
+>>>>>>> david:Assets/Models/HotSprings/Group22992Mat.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
