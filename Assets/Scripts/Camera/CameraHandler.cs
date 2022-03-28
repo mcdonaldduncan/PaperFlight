@@ -22,23 +22,20 @@ public class CameraHandler : MonoBehaviour
 
     void LateUpdate()
     {
-        FollowTarget();
+        //FollowTarget();
+        ThirdPersonPosition();
     }
 
 
     void FollowTarget()
     {
-        
-
-        Vector3 targetVector = target.position;
-        
+        //Vector3 targetRotation = target.rotation.eulerAngles;
 
         transform.position = new Vector3(target.position.x + xOffset, target.position.y + yOffset, target.position.z + zOffset);
+        //transform.rotation = Quaternion.Euler(transform.rotation.x, targetRotation.x, transform.rotation.z);
         
     }
-
-
-    // Use polar coordinates
+    
     void FollowRotation()
     {
         float step = rotationDelta * Time.deltaTime;
@@ -47,6 +44,18 @@ public class CameraHandler : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(eulerTarget);
 
         transform.rotation = targetRotation;
+    }
+
+    // calculate polar coordinates behind target object
+    void ThirdPersonPosition()
+    {
+
+        float x = (xOffset) * Mathf.Sin(target.rotation.y);
+        float z = (xOffset) * Mathf.Cos(target.rotation.y);
+
+        Vector3 targetPosition = new Vector3(x, yOffset, z);
+
+        transform.position = target.position + targetPosition;
     }
 
 }
