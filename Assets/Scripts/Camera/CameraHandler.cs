@@ -9,6 +9,7 @@ public class CameraHandler : MonoBehaviour
     [SerializeField] float yOffset;
     [SerializeField] float zOffset;
     [SerializeField] float rotationDelta;
+    [SerializeField] bool thirdPersonRotation;
 
     void Start()
     {
@@ -49,13 +50,23 @@ public class CameraHandler : MonoBehaviour
     // calculate polar coordinates behind target object
     void ThirdPersonPosition()
     {
+        float rotation = Mathf.Deg2Rad * target.rotation.eulerAngles.y;
 
-        float x = (xOffset) * Mathf.Sin(target.rotation.y);
-        float z = (xOffset) * Mathf.Cos(target.rotation.y);
+        float x = (xOffset) * Mathf.Sin(rotation);
+        float z = (xOffset) * Mathf.Cos(rotation);
 
         Vector3 targetPosition = new Vector3(x, yOffset, z);
 
         transform.position = target.position + targetPosition;
+
+        if (thirdPersonRotation)
+        {
+            ThirdPersonRotation();
+        }
     }
 
+    void ThirdPersonRotation()
+    {
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, target.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+    }
 }
