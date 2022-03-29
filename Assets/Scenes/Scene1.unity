@@ -4289,12 +4289,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a62c16c6db4dc44baf3d27ea4167dbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fixedOffset: 0
+  thirdPerson: 0
+  coupleThirdPersonRotation: 0
+  coupleX: 0
+  coupleY: 0
+  coupleZ: 0
   target: {fileID: 258177696}
   xOffset: -4
   yOffset: -0.4
   zOffset: 0
   rotationDelta: 2
-  thirdPersonRotation: 1
 --- !u!1001 &1154563478
 PrefabInstance:
   m_ObjectHideFlags: 0
