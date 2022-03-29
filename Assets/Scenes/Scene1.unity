@@ -522,7 +522,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106385926}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b73085d978a8d04584afcbaa97e2817, type: 3}
   m_Name: 
@@ -4294,6 +4294,7 @@ MonoBehaviour:
   yOffset: -0.4
   zOffset: 0
   rotationDelta: 2
+  thirdPersonRotation: 1
 --- !u!1001 &1154563478
 PrefabInstance:
   m_ObjectHideFlags: 0
