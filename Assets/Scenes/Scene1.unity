@@ -4290,10 +4290,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fixedOffset: 0
-  thirdPerson: 0
-  coupleThirdPersonRotation: 0
+  thirdPerson: 1
+  coupleThirdPersonRotation: 1
   coupleX: 0
-  coupleY: 0
+  coupleY: 1
   coupleZ: 0
   target: {fileID: 258177696}
   xOffset: -4

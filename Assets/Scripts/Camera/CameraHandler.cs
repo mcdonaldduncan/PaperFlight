@@ -5,26 +5,30 @@ using UnityEngine;
 public class CameraHandler : MonoBehaviour
 {
     // Select movement type
+    [Header("Select following method")]
     [SerializeField] bool fixedOffset;
     [SerializeField] bool thirdPerson;
 
     // Select rotation in 3rd person
+    [Header("Select if rotation is coupled in third person")]
     [SerializeField] bool coupleThirdPersonRotation;
 
     // Select rotation axis to follow
+    [Header("Select axis to couple")]
     [SerializeField] bool coupleX;
     [SerializeField] bool coupleY;
     [SerializeField] bool coupleZ;
 
     // Assign target and offset values
+    [Header("Assign target transform and offset values")]
     [SerializeField] Transform target;
     [SerializeField] float xOffset;
     [SerializeField] float yOffset;
     [SerializeField] float zOffset;
-    
+
     // Assign smoothing value to rotation
+    [Header("Assign value to smooth rotation by")]
     [SerializeField] float rotationDelta;
-    
 
     void LateUpdate()
     {
@@ -45,7 +49,6 @@ public class CameraHandler : MonoBehaviour
         }
     }
 
-
     void OffsetTargetFollow()
     {
         transform.position = new Vector3(target.position.x + xOffset, target.position.y + yOffset, target.position.z + zOffset);
@@ -61,8 +64,6 @@ public class CameraHandler : MonoBehaviour
         Vector3 eulerTarget = Vector3.MoveTowards(transform.rotation.eulerAngles, constrainedRotation, step);
 
         Quaternion targetRotation = Quaternion.Euler(eulerTarget);
-
-
 
         transform.rotation = targetRotation;
     }
@@ -103,9 +104,12 @@ public class CameraHandler : MonoBehaviour
 
         if (coupleThirdPersonRotation)
         {
-            FollowRotation();
+            ThirdPersonRotation();
         }
     }
 
-    
+    void ThirdPersonRotation()
+    {
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, target.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+    }
 }
