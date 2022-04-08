@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WaterMat 1
-  m_Shader: {fileID: -6465566751694194690, guid: 98c21fb81e9083a45be2b2651ee76526,
+  m_Shader: {fileID: -6465566751694194690, guid: 654c1bcb801b4eb4f8ed7dace7ebde63,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,6 +33,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_278DC59A:
+        m_Texture: {fileID: 2800000, guid: 1377eca9e57c15b499c0f625e47857b9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_4B805FE5:
+        m_Texture: {fileID: 2800000, guid: 59786778f2d66754ea96ff253386aa49, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -104,14 +112,22 @@ Material:
     m_Floats:
     - Vector1_1BACE0FC: -16.4
     - Vector1_1DA5956A: 0.019
+    - Vector1_2850348E: 6
+    - Vector1_3510B7B6: 0.002
     - Vector1_447E72F5: 243
     - Vector1_44D15445: 1
     - Vector1_5C8A396: 18.62
     - Vector1_69F6E839: 0.9
     - Vector1_6B2780C0: 0.359
+    - Vector1_8E369CA9: 40.48
     - Vector1_938944ED: 1.4
     - Vector1_99A44CE: -2.78
+    - Vector1_A12BBBC3: 3.36
     - Vector1_A2AC0754: 1
+    - Vector1_A2DA9511: -6.89
+    - Vector1_ABF8162A: 0.7
+    - Vector1_B2B4E1F6: 0.03
+    - Vector1_B3E43BAF: 1.77
     - Vector1_B45F720C: 0.344
     - Vector1_BE4AE131: 250
     - Vector1_DD4F7F67: 0.005
@@ -138,9 +154,11 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Color_55BE149C: {r: 0.09255963, g: 0.18483001, b: 0.24528301, a: 0}
     - Color_5BD905AC: {r: 0, g: 0, b: 0, a: 0}
     - Color_5C386CFC: {r: 0.27808988, g: 0.43876404, b: 0.55, a: 0}
     - Color_61268B0F: {r: 0.36250502, g: 0.44822243, b: 0.507, a: 0}
+    - Color_B108E322: {r: 0.14951941, g: 0.1811544, b: 0.2830189, a: 0.8745098}
     - Color_E5D4DA52: {r: 0.1254902, g: 0.22352943, b: 0.30980393, a: 0}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
