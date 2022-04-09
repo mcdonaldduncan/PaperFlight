@@ -6,8 +6,8 @@ public class CameraHandler : MonoBehaviour
 {
     // Select movement type
     [Header("Select following method")]
-    [SerializeField] bool fixedOffset;
-    [SerializeField] bool thirdPerson;
+    public bool fixedOffset;
+    public bool thirdPerson;
 
     // Select rotation in 3rd person
     [Header("Select if rotation is coupled in third person")]
@@ -22,7 +22,7 @@ public class CameraHandler : MonoBehaviour
     // Assign target and offset values
     [Header("Assign target transform and offset values")]
     [SerializeField] Transform target;
-    [SerializeField] float xOffset;
+    public  float xOffset;
     [SerializeField] float yOffset;
     [SerializeField] float zOffset;
 
