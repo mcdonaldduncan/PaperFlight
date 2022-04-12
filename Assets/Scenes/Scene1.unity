@@ -1767,6 +1767,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3f591a6b945b4d240bf196e3ddb4789c, type: 2}
+    - target: {fileID: 3392271577003174410, guid: 605a46a399280724996ceb8e06dff5cb,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5333380548561536385, guid: 605a46a399280724996ceb8e06dff5cb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4935,7 +4940,7 @@ MonoBehaviour:
   target: {fileID: 258177696}
   xOffset: 0
   yOffset: -0.5
-  zOffset: -0.1
+  zOffset: -0.59
   rotationDelta: 2
 --- !u!1001 &1154563478
 PrefabInstance:
