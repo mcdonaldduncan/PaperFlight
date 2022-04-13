@@ -32,13 +32,13 @@ public class NodePathfinder : MonoBehaviour
 
     void FollowNodes()
     {
-        if (Vector3.Distance(transform.position, nodes[index].position) < 1f)
-            index++;
-        if (index == nodes.Length)
+        if (index == nodes.Length - 1)
         {
             shouldDestroy = true;
             return;
         }
+        if (Vector3.Distance(transform.position, nodes[index].position) < 1f)
+            index++;
             
 
         float step = speed * Time.deltaTime;
