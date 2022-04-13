@@ -1865,11 +1865,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 8149821039361591234, guid: cd0e12e706c3a7b41a508b89314380c8,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd0e12e706c3a7b41a508b89314380c8,
         type: 3}
       propertyPath: m_RootOrder
@@ -1939,6 +1934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8149821039361591234, guid: cd0e12e706c3a7b41a508b89314380c8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 2120539623906046279, guid: cd0e12e706c3a7b41a508b89314380c8,
         type: 3}
@@ -8898,9 +8898,9 @@ Light:
   m_GameObject: {fileID: 2112550167}
   m_Enabled: 1
   serializedVersion: 9
-  m_Type: 3
+  m_Type: 1
   m_Color: {r: 0.8392157, g: 0.9213289, b: 1, a: 1}
-  m_Intensity: 10
+  m_Intensity: 1
   m_Range: 200
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
