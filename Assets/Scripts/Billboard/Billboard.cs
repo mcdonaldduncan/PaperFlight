@@ -8,14 +8,6 @@ public class Billboard : MonoBehaviour
     public float angleY = 0;
     public float angleZ = 0;
 
-    Vector3 transformVec = new Vector3(90, 90, 90);
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         Vector3 eulerRotation = Camera.main.transform.rotation.eulerAngles;

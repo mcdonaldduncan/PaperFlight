@@ -36,8 +36,7 @@ public class NodePathfinder : MonoBehaviour
             index++;
         if (index == nodes.Length)
         {
-            shouldDestroy = true;
-            return;
+            index = 0;
         }
             
 
@@ -47,6 +46,8 @@ public class NodePathfinder : MonoBehaviour
 
     void CheckStart()
     {
+        if (shouldMove)
+            return;
         if (colBounds.Contains(plane.position))
             shouldMove = true;
     }
