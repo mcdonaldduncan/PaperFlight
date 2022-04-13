@@ -32,14 +32,13 @@ public class NodePathfinder : MonoBehaviour
 
     void FollowNodes()
     {
-        if (index == nodes.Length - 1)
+        if (index == nodes.Length)
         {
-            shouldDestroy = true;
-            return;
+            index = 0;
         }
+
         if (Vector3.Distance(transform.position, nodes[index].position) < 1f)
             index++;
-            
 
         float step = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, nodes[index].position, step);
@@ -47,6 +46,8 @@ public class NodePathfinder : MonoBehaviour
 
     void CheckStart()
     {
+        if (shouldMove)
+            return;
         if (colBounds.Contains(plane.position))
             shouldMove = true;
     }
