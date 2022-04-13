@@ -33,6 +33,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_18732531:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_5739482F:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -47,6 +51,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - Texture2D_DBFECBA2:
         m_Texture: {fileID: 2800000, guid: e2d083428da58ac43bd919e038894a5b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F834D0AF:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -145,6 +153,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_FF947A10_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4953287098934154e9c56640817be9a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -158,11 +170,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_27056322: 0.1
+    - Vector1_27056322: 0.05
     - Vector1_32E45BEA: 0
     - Vector1_53D893C3: 30
     - Vector1_938E730F: 5
-    - Vector1_C7F711DE: 1
+    - Vector1_C7F711DE: -53.1
     - Vector1_E2A6DF42: 1
     - _AlphaClip: 0
     - _Blend: 0
@@ -191,4 +203,3 @@ Material:
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-  m_BuildTextureStacks: []
