@@ -153,6 +153,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_FF947A10_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 4953287098934154e9c56640817be9a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -166,11 +170,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_27056322: 0.1
+    - Vector1_27056322: 0.05
     - Vector1_32E45BEA: 0
     - Vector1_53D893C3: 30
     - Vector1_938E730F: 5
-    - Vector1_C7F711DE: 1
+    - Vector1_C7F711DE: -53.1
     - Vector1_E2A6DF42: 1
     - _AlphaClip: 0
     - _Blend: 0
