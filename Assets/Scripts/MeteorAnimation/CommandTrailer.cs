@@ -28,8 +28,15 @@ public class CommandTrailer : MonoBehaviour
 
     void Rotate()
     {
-
-        rotation += Time.deltaTime;
+        if (bracket % 2 == 0)
+        {
+            rotation -= Time.deltaTime * (bracket + 1);
+        }
+        else
+        {
+            rotation += Time.deltaTime * (bracket + 1);
+        }
+        
 
         float x = offset * Mathf.Sin(rotation);
         float y = offset * Mathf.Cos(rotation);
