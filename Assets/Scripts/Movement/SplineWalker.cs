@@ -185,7 +185,7 @@ public class SplineWalker : MonoBehaviour
             return;
         }
 
-        Debug.Log(VRDevice.DeviceName);
+        //Debug.Log(VRDevice.DeviceName);
 
         //Debug.Log(inputDevice.Name);
         float step = Time.deltaTime * .005f;
@@ -197,7 +197,7 @@ public class SplineWalker : MonoBehaviour
 
         //speed = maxSpeed / (1 + inputDevice.GetAxis1D(VRAxis.Two) * 5);
 
-        Debug.Log(inputDevice.GetButtonDown(VRButton.Trigger));
+        //Debug.Log(inputDevice.GetButtonDown(VRButton.Trigger));
 
 
         // Debug.Log(inputDevice.GetAxis1D(VRAxis.Two));
