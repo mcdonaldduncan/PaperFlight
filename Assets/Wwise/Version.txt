@@ -1,0 +1,7 @@
+Wwise Unity Integration Version Info:
+
+Based on Wwise SDK: 2021.1.7 Build 7796
+
+Unity Integration Bundle: 2021.1.7.2335
+
+Unity Integration Version: 19
