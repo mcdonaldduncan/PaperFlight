@@ -22,12 +22,4 @@ public class BergTrigger : MonoBehaviour
             myAnimator.SetBool("Berg", true);
         funny = true;
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            funny = true;
-            myAnimator.SetBool("Berg", true);
-        }
-    }
 }
