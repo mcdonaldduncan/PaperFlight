@@ -27,6 +27,7 @@ public class End : MonoBehaviour
 
     public void EndGame()
     {
-        ExperienceApp.End();
+        Application.Quit();
+        //ExperienceApp.End();
     }
 }
