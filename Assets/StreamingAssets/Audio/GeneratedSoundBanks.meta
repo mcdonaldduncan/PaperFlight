@@ -1,9 +1,21 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/SnowParticle/Prefabs.meta
 guid: 6eed1b7800eb4c24eb95b484d6e6dc8f
 =======
 guid: 4f68137c8cdc12441ae8417d46880089
 >>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.):Assets/StreamingAssets/Audio/GeneratedSoundBanks.meta
+=======
+<<<<<<<< HEAD:Assets/StreamingAssets/Audio/GeneratedSoundBanks.meta
+guid: 4f68137c8cdc12441ae8417d46880089
+========
+<<<<<<< HEAD:Assets/SnowParticle.meta
+guid: a237bdcd90efa274e9e8137ecc62ce95
+=======
+guid: 7d77dd909ccc2874991ebd5b9a4cdf5d
+>>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.):Assets/Models/TestMeshes.meta
+>>>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/SnowParticle.meta
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
