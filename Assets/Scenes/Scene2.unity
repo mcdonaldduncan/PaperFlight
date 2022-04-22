@@ -386,7 +386,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_TransformParent: {fileID: 682534230}
+=======
+    m_TransformParent: {fileID: 0}
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
     m_TransformParent: {fileID: 0}
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -396,6 +400,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountainuvdone3
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
@@ -412,17 +417,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -725.4894
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 72.6
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalPosition.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -127.27773
+=======
+      value: -23.200003
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: -23.200003
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -431,7 +445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -328.5255
+=======
+      value: 435.7
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 435.7
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -445,7 +463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.6952829
+=======
+      value: -0.016583987
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: -0.016583987
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -459,7 +481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.71873623
+=======
+      value: 0.99986255
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 0.99986255
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -469,10 +495,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 7
 =======
       value: 5
 >>>>>>> Brian
+=======
+      value: 5
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 5
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -496,7 +526,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 16311.168
+=======
+      value: 16311.158
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 16311.158
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -510,7 +544,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 9503.185
+=======
+      value: 9503.18
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 9503.18
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -642,12 +680,15 @@ Transform:
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &50843557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0,
     type: 3}
   m_PrefabInstance: {fileID: 935141704}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &60940004
@@ -1022,8 +1063,13 @@ MonoBehaviour:
   spline: {fileID: 1390707911}
   usingControllers: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!65 &106385935
 BoxCollider:
+=======
+--- !u!82 &106385928
+AudioSource:
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 --- !u!82 &106385928
 AudioSource:
@@ -1033,6 +1079,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106385926}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1130,6 +1177,8 @@ Transform:
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -1225,6 +1274,9 @@ AudioListener:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
   m_GameObject: {fileID: 106385926}
   m_Enabled: 0
@@ -1612,7 +1664,10 @@ Transform:
   m_PrefabInstance: {fileID: 128559208}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Brian
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &164663212
@@ -2134,12 +2189,15 @@ Transform:
   m_PrefabInstance: {fileID: 1123059271}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &254997018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
     type: 3}
   m_PrefabInstance: {fileID: 1348966120}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &258177695
@@ -2559,8 +2617,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &287126708
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1 &258587082
@@ -2646,7 +2707,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &285579310
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Brian
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 PrefabInstance:
@@ -3282,7 +3346,10 @@ Transform:
   m_PrefabInstance: {fileID: 442489948}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &450945337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3367,6 +3434,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1febf6d00a4e5d5428be9821dfaba5b6, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &475917099
 PrefabInstance:
@@ -3456,12 +3526,15 @@ Transform:
   m_PrefabInstance: {fileID: 475917099}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &531013124 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
     type: 3}
   m_PrefabInstance: {fileID: 30432670}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &594580012
@@ -3716,12 +3789,15 @@ Transform:
   - {fileID: 705317871}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 50843557}
   - {fileID: 1281614749}
   - {fileID: 1261798006}
   - {fileID: 254997018}
   - {fileID: 1330832946}
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
   - {fileID: 778745779}
@@ -3731,7 +3807,10 @@ Transform:
   - {fileID: 932795370}
   - {fileID: 695708917}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Brian
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
   m_Father: {fileID: 681411983}
@@ -3977,7 +4056,11 @@ Transform:
   - {fileID: 707075154}
   m_Father: {fileID: 1676988090}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 0
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
   m_RootOrder: 0
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -4017,7 +4100,10 @@ Transform:
   - {fileID: 1991485608}
   - {fileID: 709720991}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 531013124}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
   m_Father: {fileID: 681411983}
@@ -5211,7 +5297,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_TransformParent: {fileID: 605092983}
+=======
+    m_TransformParent: {fileID: 0}
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
     m_TransformParent: {fileID: 0}
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -5220,6 +5310,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1LOD_grup1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 100010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -5237,6 +5328,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -114.02007
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 114.02
@@ -5248,6 +5341,9 @@ PrefabInstance:
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalPosition.z
       value: 207.02
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
@@ -5257,7 +5353,11 @@ PrefabInstance:
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalRotation.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.99940026
+=======
+      value: 0.68219644
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 0.68219644
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -5269,6 +5369,7 @@ PrefabInstance:
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalRotation.w
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.03462877
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
@@ -5279,11 +5380,16 @@ PrefabInstance:
       value: 2
 >>>>>>> Brian
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
       value: 0.731169
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_RootOrder
       value: 2
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
@@ -5301,7 +5407,11 @@ PrefabInstance:
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalScale.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 3.0849051
+=======
+      value: 3.0849
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 3.0849
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -5313,7 +5423,11 @@ PrefabInstance:
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalScale.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 3.0849051
+=======
+      value: 3.0849
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 3.0849
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -5411,6 +5525,7 @@ PrefabInstance:
       value: -0.205
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 100008, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -5431,6 +5546,8 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
     m_RemovedComponents: []
@@ -6781,7 +6898,11 @@ Transform:
   - {fileID: 1839633692}
   m_Father: {fileID: 1676988090}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 3
+=======
+  m_RootOrder: 2
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
   m_RootOrder: 2
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7044,12 +7165,15 @@ Transform:
   m_PrefabInstance: {fileID: 1260331424}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &1261798006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f,
     type: 3}
   m_PrefabInstance: {fileID: 2044606164}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &1274945165
@@ -7136,12 +7260,15 @@ Transform:
   m_PrefabInstance: {fileID: 1274945165}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &1281614749 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50,
     type: 3}
   m_PrefabInstance: {fileID: 1532372008}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &1287186676
@@ -7409,6 +7536,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326444158}
   m_Mesh: {fileID: 4300000, guid: d1edb567dd56f994cbb75a74e047b18a, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!4 &1330832946 stripped
 Transform:
@@ -7758,13 +7886,19 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 --- !u!1001 &1348966120
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_TransformParent: {fileID: 605092983}
+=======
+    m_TransformParent: {fileID: 0}
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
     m_TransformParent: {fileID: 0}
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7774,6 +7908,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: rock5_LOD0_VersionB (1)
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: -927199367670048503, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
@@ -7785,17 +7920,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 297.7901
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.79
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalPosition.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 275.1
+=======
+      value: -34.9
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: -34.9
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7804,7 +7948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -50.790054
+=======
+      value: 297.79
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 297.79
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7813,7 +7961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.00000008064338
+=======
+      value: 0.000000065160876
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 0.000000065160876
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7822,7 +7974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.989971
+=======
+      value: 0.6001212
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 0.6001212
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7831,7 +7987,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -0.000000011508023
+=======
+      value: 0.000000048886076
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 0.000000048886076
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7840,7 +8000,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.1412714
+=======
+      value: 0.7999091
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 0.7999091
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7850,10 +8014,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 39
 =======
       value: 8
 >>>>>>> Brian
+=======
+      value: 8
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 8
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7877,7 +8045,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 19.532736
+=======
+      value: 19.532705
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 19.532705
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7891,7 +8063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 19.532736
+=======
+      value: 19.532705
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 19.532705
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -8092,6 +8268,7 @@ MonoBehaviour:
   - {x: 993.2891, y: 94.17541, z: 115.82055}
   - {x: 1068.2943, y: 98.09413, z: 163.5477}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {x: 1086.387, y: 95.78079, z: 154.22894}
   - {x: 1143.0566, y: 98.90408, z: 121.50877}
   - {x: 1199.7263, y: 102.027374, z: 88.788605}
@@ -8100,6 +8277,8 @@ MonoBehaviour:
   - {x: 1487.3575, y: 122.37318, z: 80.33385}
   - {x: 1529.1274, y: 131.71997, z: 113.7838}
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
   - {x: 1086.3868, y: 95.727165, z: 154.22897}
   - {x: 1143.0564, y: 94.17541, z: 121.508736}
   - {x: 1199.726, y: 92.62365, z: 88.7885}
@@ -8107,6 +8286,9 @@ MonoBehaviour:
   - {x: 1363.4016, y: 111.97254, z: 67.12497}
   - {x: 1487.3573, y: 115.271675, z: 80.33383}
   - {x: 1609.9745, y: 133.63907, z: 175.358}
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
   - {x: 1698.3939, y: 141.28548, z: 225.7048}
   modes: 00000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
@@ -8439,7 +8621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0
+=======
+      value: 4294967294
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 4294967294
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -8448,7 +8634,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_DynamicOccludee
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0
+=======
+      value: 1
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 1
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -8472,7 +8662,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_TransformParent: {fileID: 605092983}
+=======
+    m_TransformParent: {fileID: 0}
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
     m_TransformParent: {fileID: 0}
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -8481,6 +8675,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1D
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 100000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -8522,6 +8717,8 @@ PrefabInstance:
       value: 3
 >>>>>>> Brian
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.44
@@ -8553,6 +8750,9 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_RootOrder
       value: 3
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
@@ -8570,6 +8770,7 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalScale.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 4.351805
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
@@ -8580,6 +8781,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 8.718405
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
       value: 4.3518
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
@@ -8589,6 +8792,9 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalScale.z
       value: 8.718396
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -8757,7 +8963,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1676988090}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 2
+=======
+  m_RootOrder: 1
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
   m_RootOrder: 1
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -8908,7 +9118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 4
+=======
+      value: 3
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 3
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -9051,7 +9265,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1337563496}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
   - {fileID: 681411983}
@@ -9059,7 +9276,10 @@ Transform:
   - {fileID: 1143394960}
   - {fileID: 1128707575}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 1736386189}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
   m_Father: {fileID: 0}
@@ -9261,8 +9481,13 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_StaticEditorFlags: 4294967295
   m_IsActive: 0
+=======
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9334,6 +9559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736386185}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 341.60004, y: -19.14, z: -85.30005}
   m_LocalScale: {x: 16.692474, y: 11.771, z: 10}
@@ -9346,12 +9572,17 @@ Transform:
   m_RootOrder: 7
 >>>>>>> Brian
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 85.3, y: -19.14, z: 341.6}
   m_LocalScale: {x: 16.69247, y: 11.771, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1773756122
@@ -10089,11 +10320,14 @@ PrefabInstance:
       value: MeteorSequence
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 6231759307235663667, guid: e811830f7f8c20c4f91b8a3bfd7e2388,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
     - target: {fileID: 6231759307235663664, guid: e811830f7f8c20c4f91b8a3bfd7e2388,
@@ -10669,7 +10903,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_TransformParent: {fileID: 605092983}
+=======
+    m_TransformParent: {fileID: 0}
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
     m_TransformParent: {fileID: 0}
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -10678,6 +10916,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1A (1)
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 100000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10695,6 +10934,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -63.16266
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.162613
@@ -10706,6 +10947,9 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalPosition.z
       value: 240.52574
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
@@ -10715,7 +10959,11 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.y
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.6139899
+=======
+      value: -0.1239728
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: -0.1239728
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -10727,6 +10975,7 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.w
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.7893139
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
@@ -10737,11 +10986,16 @@ PrefabInstance:
       value: 9
 >>>>>>> Brian
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
       value: 0.99228567
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_RootOrder
       value: 9
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
@@ -10759,7 +11013,11 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 2.4909177
+=======
+      value: 2.490917
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 2.490917
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -10771,7 +11029,11 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 2.043489
+=======
+      value: 2.0434878
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 2.0434878
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -10878,7 +11140,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_TransformParent: {fileID: 605092983}
+=======
+    m_TransformParent: {fileID: 0}
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
     m_TransformParent: {fileID: 0}
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -10887,6 +11153,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock1A
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: 100000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10912,6 +11179,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.y
       value: 0.7071068
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 105.27
@@ -10931,6 +11200,9 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
@@ -10939,6 +11211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
 <<<<<<< HEAD
       value: 0.7071068
       objectReference: {fileID: 0}
@@ -10950,11 +11223,16 @@ PrefabInstance:
       value: 4
 >>>>>>> Brian
 =======
+=======
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_RootOrder
       value: 4
+<<<<<<< HEAD
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
@@ -10972,7 +11250,11 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 2.0733283
+=======
+      value: 2.0733268
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 2.0733268
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -10984,7 +11266,11 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.z
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 2.1575081
+=======
+      value: 2.1575067
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
       value: 2.1575067
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -11831,7 +12117,11 @@ Transform:
   m_GameObject: {fileID: 2136913663}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.4142, y: 0.339, z: 0.1939}
+=======
+  m_LocalPosition: {x: -0.41424546, y: 0.25676417, z: -0.027767474}
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
   m_LocalPosition: {x: -0.41424546, y: 0.25676417, z: -0.027767474}
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -11852,8 +12142,13 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Size: {x: 268.60483, y: 68.774765, z: 246.05028}
   m_Center: {x: -7.2943873, y: -33.887383, z: -87.89815}
+=======
+  m_Size: {x: 233.66287, y: 68.774765, z: 246.05026}
+  m_Center: {x: 10.17659, y: -33.887383, z: -87.89815}
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
   m_Size: {x: 233.66287, y: 68.774765, z: 246.05026}
   m_Center: {x: 10.17659, y: -33.887383, z: -87.89815}
@@ -12153,7 +12448,11 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsActive: 0
+=======
+  m_IsActive: 1
+>>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
   m_IsActive: 1
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
