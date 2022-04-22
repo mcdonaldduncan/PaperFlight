@@ -887,6 +887,7 @@ PrefabInstance:
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
       value: 56.3
 =======
       value: 55.799927
@@ -897,6 +898,9 @@ PrefabInstance:
 =======
       value: 55.8
 >>>>>>> parent of be9163e (test):Assets/Scenes/Scene1.unity
+=======
+      value: 55.8
+>>>>>>> parent of 11f6c0b (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 1735958008480194263, guid: a1c1d456f995c7240b2ad6045e60b10d,
         type: 3}
@@ -2577,11 +2581,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
     - target: {fileID: 8616939130607247117, guid: 605a46a399280724996ceb8e06dff5cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 11f6c0b (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
     m_RemovedComponents: []
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
   m_SourcePrefab: {fileID: 100100000, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
@@ -3852,9 +3859,13 @@ Transform:
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 =======
   - {fileID: 5006512735959156829}
 >>>>>>> parent of be9163e (test):Assets/Scenes/Scene1.unity
+=======
+  - {fileID: 5006512735959156829}
+>>>>>>> parent of 11f6c0b (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
   - {fileID: 20076699}
   - {fileID: 876078961}
   - {fileID: 2083375052}
@@ -5088,6 +5099,7 @@ Transform:
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
   m_RootOrder: 8
 =======
   m_RootOrder: 15
@@ -5098,6 +5110,9 @@ Transform:
 =======
   m_RootOrder: 14
 >>>>>>> parent of be9163e (test):Assets/Scenes/Scene1.unity
+=======
+  m_RootOrder: 14
+>>>>>>> parent of 11f6c0b (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1010549405
 PrefabInstance:
@@ -11730,6 +11745,7 @@ Transform:
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
   m_RootOrder: 16
 =======
   m_RootOrder: 19
@@ -11740,6 +11756,9 @@ Transform:
 =======
   m_RootOrder: 18
 >>>>>>> parent of be9163e (test):Assets/Scenes/Scene1.unity
+=======
+  m_RootOrder: 18
+>>>>>>> parent of 11f6c0b (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -35.021}
 --- !u!1 &8296172668039101006
 GameObject:
