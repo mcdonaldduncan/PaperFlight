@@ -385,27 +385,56 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 0}
+=======
+    m_TransformParent: {fileID: 682534230}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_Name
       value: mountainuvdone3
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 72.6
+=======
+    - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -725.4894
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: -23.200003
+=======
+      value: -127.27773
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: 435.7
+=======
+      value: -328.5255
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
@@ -415,7 +444,11 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
       value: -0.016583987
+=======
+      value: 0.6952829
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
@@ -425,12 +458,24 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
       value: 0.99986255
+=======
+      value: 0.71873623
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 5
+=======
+<<<<<<< HEAD
+      value: 7
+=======
+      value: 5
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
@@ -450,7 +495,11 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
       value: 16311.158
+=======
+      value: 16311.168
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
@@ -460,7 +509,11 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalScale.z
+<<<<<<< HEAD
       value: 9503.18
+=======
+      value: 9503.185
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
@@ -588,6 +641,15 @@ Transform:
   m_Father: {fileID: 681411983}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!4 &50843557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 935141704}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &60940004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -959,13 +1021,19 @@ MonoBehaviour:
   speed: 10
   spline: {fileID: 1390707911}
   usingControllers: 1
+<<<<<<< HEAD
 --- !u!82 &106385928
 AudioSource:
+=======
+--- !u!65 &106385935
+BoxCollider:
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106385926}
+<<<<<<< HEAD
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -1061,6 +1129,103 @@ AudioListener:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+=======
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &128559208
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 605092983}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_Name
+      value: rock5_LOD0 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967294
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 182.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 312.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -148.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.6929406
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.11583142
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.072420694
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7079348
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 74.652
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 272.779
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 276.32898
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.759079
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.7590795
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7590795
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10360f21452411841a9502b7844df100, type: 2}
+    - target: {fileID: 2300000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9759fb3c5a5198e4b928b7cda7b8d139, type: 3}
+--- !u!4 &128559209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 9759fb3c5a5198e4b928b7cda7b8d139,
+    type: 3}
+  m_PrefabInstance: {fileID: 128559208}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_GameObject: {fileID: 106385926}
   m_Enabled: 0
 --- !u!82 &106385930
@@ -1446,6 +1611,10 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 128559208}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &164663212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1964,6 +2133,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1123059271}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!4 &254997018 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
+    type: 3}
+  m_PrefabInstance: {fileID: 1348966120}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &258177695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2379,6 +2557,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 258177695}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+--- !u!1001 &287126708
+=======
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1 &258587082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,6 +2645,10 @@ Transform:
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &285579310
+<<<<<<< HEAD
+=======
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3093,6 +3281,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 442489948}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &450945337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3177,6 +3366,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1febf6d00a4e5d5428be9821dfaba5b6, type: 3}
+=======
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &475917099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3264,6 +3455,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 475917099}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!4 &531013124 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
+    type: 3}
+  m_PrefabInstance: {fileID: 30432670}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &594580012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3514,12 +3714,26 @@ Transform:
   - {fileID: 287126709}
   - {fileID: 2115839090}
   - {fileID: 705317871}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  - {fileID: 50843557}
+  - {fileID: 1281614749}
+  - {fileID: 1261798006}
+  - {fileID: 254997018}
+  - {fileID: 1330832946}
+=======
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   - {fileID: 778745779}
   - {fileID: 186206937}
   - {fileID: 1071457984}
   - {fileID: 122953119}
   - {fileID: 932795370}
   - {fileID: 695708917}
+<<<<<<< HEAD
+=======
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_Father: {fileID: 681411983}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3762,7 +3976,11 @@ Transform:
   - {fileID: 2083375052}
   - {fileID: 707075154}
   m_Father: {fileID: 1676988090}
+<<<<<<< HEAD
   m_RootOrder: 0
+=======
+  m_RootOrder: 1
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &682534229
 GameObject:
@@ -3798,6 +4016,10 @@ Transform:
   - {fileID: 1274945166}
   - {fileID: 1991485608}
   - {fileID: 709720991}
+<<<<<<< HEAD
+=======
+  - {fileID: 531013124}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_Father: {fileID: 681411983}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4988,12 +5210,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 0}
+=======
+    m_TransformParent: {fileID: 605092983}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
     m_Modifications:
     - target: {fileID: 100010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_Name
       value: Rock1LOD_grup1
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 114.02
@@ -5005,6 +5232,23 @@ PrefabInstance:
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalPosition.z
       value: 207.02
+=======
+    - target: {fileID: 100010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 207.02008
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 273.08002
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -114.02007
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5012,7 +5256,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
       value: 0.68219644
+=======
+      value: 0.99940026
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -5020,11 +5268,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
       value: 0.731169
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_RootOrder
       value: 2
+=======
+      value: 0.03462877
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 36
+=======
+      value: 2
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5040,7 +5300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
       value: 3.0849
+=======
+      value: 3.0849051
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalScale.y
@@ -5048,7 +5312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalScale.z
+<<<<<<< HEAD
       value: 3.0849
+=======
+      value: 3.0849051
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5142,6 +5410,29 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.205
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 100008, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
 --- !u!1 &974998334
@@ -6489,7 +6780,11 @@ Transform:
   m_Children:
   - {fileID: 1839633692}
   m_Father: {fileID: 1676988090}
+<<<<<<< HEAD
   m_RootOrder: 2
+=======
+  m_RootOrder: 3
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1154563478
 PrefabInstance:
@@ -6748,6 +7043,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1260331424}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!4 &1261798006 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2044606164}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &1274945165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6831,6 +7135,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1274945165}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
+--- !u!4 &1281614749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50,
+    type: 3}
+  m_PrefabInstance: {fileID: 1532372008}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &1287186676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7096,57 +7409,454 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326444158}
   m_Mesh: {fileID: 4300000, guid: d1edb567dd56f994cbb75a74e047b18a, type: 3}
+<<<<<<< HEAD
+=======
+--- !u!4 &1330832946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1994441134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1337563491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337563496}
+  - component: {fileID: 1337563495}
+  - component: {fileID: 1337563494}
+  - component: {fileID: 1337563493}
+  - component: {fileID: 1337563492}
+  m_Layer: 0
+  m_Name: AudioPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1337563492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337563491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6abea33a3d9e7f947b123ea7795d8e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 258177696}
+  caveAudio: {fileID: 1337563495}
+  baseMelody: {fileID: 1337563494}
+  baseStrings: {fileID: 1337563493}
+  caveCollider: {fileID: 2136913665}
+  fadeSpeed: 0.075
+--- !u!82 &1337563493
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337563491}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a3ead3a65939d53449160f57100e1f83, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1337563494
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337563491}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 10da1c87150592d46a5ed569eaadd4da, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1337563495
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337563491}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9b61880aa107bb44483eb35ddfec5b46, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1337563496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337563491}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 769.37134, y: -17.308153, z: -4.100647}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1676988090}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &1348966120
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 0}
+=======
+    m_TransformParent: {fileID: 605092983}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_Name
       value: rock5_LOD0_VersionB (1)
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.79
+=======
+    - target: {fileID: -927199367670048503, guid: d8d8a6f732224aa4894a7531e153a833,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 297.7901
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: -34.9
+=======
+      value: 275.1
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: 297.79
+=======
+      value: -50.790054
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalRotation.x
+<<<<<<< HEAD
       value: 0.000000065160876
+=======
+      value: 0.00000008064338
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
       value: 0.6001212
+=======
+      value: 0.989971
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalRotation.z
+<<<<<<< HEAD
       value: 0.000000048886076
+=======
+      value: -0.000000011508023
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
       value: 0.7999091
+=======
+      value: 0.1412714
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 8
+=======
+<<<<<<< HEAD
+      value: 39
+=======
+      value: 8
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
@@ -7166,7 +7876,11 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
       value: 19.532705
+=======
+      value: 19.532736
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
@@ -7176,7 +7890,11 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalScale.z
+<<<<<<< HEAD
       value: 19.532705
+=======
+      value: 19.532736
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
@@ -7373,6 +8091,7 @@ MonoBehaviour:
   - {x: 918.28394, y: 90.25668, z: 68.0934}
   - {x: 993.2891, y: 94.17541, z: 115.82055}
   - {x: 1068.2943, y: 98.09413, z: 163.5477}
+<<<<<<< HEAD
   - {x: 1086.3868, y: 95.727165, z: 154.22897}
   - {x: 1143.0564, y: 94.17541, z: 121.508736}
   - {x: 1199.726, y: 92.62365, z: 88.7885}
@@ -7380,6 +8099,15 @@ MonoBehaviour:
   - {x: 1363.4016, y: 111.97254, z: 67.12497}
   - {x: 1487.3573, y: 115.271675, z: 80.33383}
   - {x: 1609.9745, y: 133.63907, z: 175.358}
+=======
+  - {x: 1086.387, y: 95.78079, z: 154.22894}
+  - {x: 1143.0566, y: 98.90408, z: 121.50877}
+  - {x: 1199.7263, y: 102.027374, z: 88.788605}
+  - {x: 1239.4457, y: 101.57191, z: 53.916092}
+  - {x: 1363.4016, y: 111.97254, z: 67.12497}
+  - {x: 1487.3575, y: 122.37318, z: 80.33385}
+  - {x: 1529.1274, y: 131.71997, z: 113.7838}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   - {x: 1698.3939, y: 141.28548, z: 225.7048}
   modes: 00000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
   loop: 0
@@ -7710,12 +8438,20 @@ PrefabInstance:
     - target: {fileID: 762208695553941706, guid: 353c938ee798f394abf6d4aeb2ba42c9,
         type: 3}
       propertyPath: m_StaticEditorFlags
+<<<<<<< HEAD
       value: 4294967294
+=======
+      value: 0
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 7415097926203774543, guid: 353c938ee798f394abf6d4aeb2ba42c9,
         type: 3}
       propertyPath: m_DynamicOccludee
+<<<<<<< HEAD
       value: 1
+=======
+      value: 0
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 7415097926203774543, guid: 353c938ee798f394abf6d4aeb2ba42c9,
         type: 3}
@@ -7735,12 +8471,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 0}
+=======
+    m_TransformParent: {fileID: 605092983}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
     m_Modifications:
     - target: {fileID: 100000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_Name
       value: Rock1D
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.44
@@ -7772,6 +8513,47 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_RootOrder
       value: 3
+=======
+    - target: {fileID: 100000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 224.65009
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 272.31485
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.44005
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.701145
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.11941926
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.028052058
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7023873
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 37
+=======
+      value: 3
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7787,6 +8569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
       value: 4.3518
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
@@ -7796,6 +8579,17 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalScale.z
       value: 8.718396
+=======
+      value: 4.351805
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8939054
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 8.718405
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
@@ -7962,7 +8756,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1676988090}
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 2
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1616105850
 MonoBehaviour:
@@ -8109,7 +8907,11 @@ PrefabInstance:
     - target: {fileID: 5108046500557188454, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 3
+=======
+      value: 4
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 5108046500557188454, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
@@ -8248,10 +9050,18 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD
+=======
+  - {fileID: 1337563496}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   - {fileID: 681411983}
   - {fileID: 1616105849}
   - {fileID: 1143394960}
   - {fileID: 1128707575}
+<<<<<<< HEAD
+=======
+  - {fileID: 1736386189}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -8450,8 +9260,13 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
+<<<<<<< HEAD
   m_StaticEditorFlags: 0
   m_IsActive: 1
+=======
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 0
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!64 &1736386186
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8518,12 +9333,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736386185}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 85.3, y: -19.14, z: 341.6}
   m_LocalScale: {x: 16.69247, y: 11.771, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+=======
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 341.60004, y: -19.14, z: -85.30005}
+  m_LocalScale: {x: 16.692474, y: 11.771, z: 10}
+  m_Children: []
+<<<<<<< HEAD
+  m_Father: {fileID: 1676988090}
+  m_RootOrder: 5
+=======
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1773756122
 GameObject:
@@ -9259,6 +10088,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MeteorSequence
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 6231759307235663667, guid: e811830f7f8c20c4f91b8a3bfd7e2388,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
     - target: {fileID: 6231759307235663664, guid: e811830f7f8c20c4f91b8a3bfd7e2388,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9831,12 +10668,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 0}
+=======
+    m_TransformParent: {fileID: 605092983}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
     m_Modifications:
     - target: {fileID: 100000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_Name
       value: Rock1A (1)
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.162613
@@ -9848,6 +10690,23 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalPosition.z
       value: 240.52574
+=======
+    - target: {fileID: 100000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 240.52582
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 274.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -63.16266
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9855,7 +10714,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD
       value: -0.1239728
+=======
+      value: 0.6139899
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.z
@@ -9863,11 +10726,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
       value: 0.99228567
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_RootOrder
       value: 9
+=======
+      value: 0.7893139
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 40
+=======
+      value: 9
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9883,7 +10758,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
       value: 2.490917
+=======
+      value: 2.4909177
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.y
@@ -9891,7 +10770,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.z
+<<<<<<< HEAD
       value: 2.0434878
+=======
+      value: 2.043489
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
@@ -9994,12 +10877,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+<<<<<<< HEAD
     m_TransformParent: {fileID: 0}
+=======
+    m_TransformParent: {fileID: 605092983}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
     m_Modifications:
     - target: {fileID: 100000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_Name
       value: Rock1A
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 105.27
@@ -10019,6 +10907,31 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
+=======
+    - target: {fileID: 100000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 236.60008
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 274.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -105.27008
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.z
@@ -10026,11 +10939,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_RootOrder
       value: 4
+=======
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 38
+=======
+      value: 4
+>>>>>>> Brian
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10046,7 +10971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.x
+<<<<<<< HEAD
       value: 2.0733268
+=======
+      value: 2.0733283
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.y
@@ -10054,7 +10983,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalScale.z
+<<<<<<< HEAD
       value: 2.1575067
+=======
+      value: 2.1575081
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
@@ -10897,7 +11830,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136913663}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.41424546, y: 0.25676417, z: -0.027767474}
+=======
+  m_LocalPosition: {x: -0.4142, y: 0.339, z: 0.1939}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
   m_LocalScale: {x: -0.0056668306, y: 0.0056668324, z: 0.005666833}
   m_Children: []
   m_Father: {fileID: 2101977681}
@@ -10914,8 +11851,13 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 233.66287, y: 68.774765, z: 246.05026}
   m_Center: {x: 10.17659, y: -33.887383, z: -87.89815}
+=======
+  m_Size: {x: 268.60483, y: 68.774765, z: 246.05028}
+  m_Center: {x: -7.2943873, y: -33.887383, z: -87.89815}
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
 --- !u!1001 &2144986453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11210,4 +12152,8 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
+<<<<<<< HEAD
   m_IsActive: 1
+=======
+  m_IsActive: 0
+>>>>>>> parent of d801a67 (Merge branch 'Brian')
