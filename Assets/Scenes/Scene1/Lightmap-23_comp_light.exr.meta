@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 90e90d70cced6b747b70436ddd1a4e2f
+=======
+guid: a4873fbc0ae40de4e956500695404eda
+>>>>>>> Brian
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
