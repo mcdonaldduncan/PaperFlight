@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 7d77dd909ccc2874991ebd5b9a4cdf5d
 =======
 <<<<<<< HEAD:Assets/SnowParticle.meta
 guid: a237bdcd90efa274e9e8137ecc62ce95
+=======
+guid: 7d77dd909ccc2874991ebd5b9a4cdf5d
+>>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.):Assets/Models/TestMeshes.meta
+>>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.)
+=======
+<<<<<<< HEAD:Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows.meta
+guid: bd2242464ecb1b049ad190354d3aef70
 =======
 guid: 7d77dd909ccc2874991ebd5b9a4cdf5d
 >>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.):Assets/Models/TestMeshes.meta

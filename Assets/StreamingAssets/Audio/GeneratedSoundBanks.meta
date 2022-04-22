@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/SnowParticle/Prefabs.meta
 guid: 6eed1b7800eb4c24eb95b484d6e6dc8f
 =======
@@ -18,6 +19,16 @@ guid: 7d77dd909ccc2874991ebd5b9a4cdf5d
 >>>>>>> parent of 64fccf9 (Merge branch 'Brian')
 folderAsset: yes
 DefaultImporter:
+=======
+<<<<<<<< HEAD:Assets/StreamingAssets/Audio/GeneratedSoundBanks.meta
+guid: 4f68137c8cdc12441ae8417d46880089
+folderAsset: yes
+DefaultImporter:
+========
+guid: 3367443b89ed16e429dcf5a29a51fcc3
+NativeFormatImporter:
+>>>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.):Assets/New Terrain 3.asset.meta
+>>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.)
   externalObjects: {}
   userData: 
   assetBundleName: 
