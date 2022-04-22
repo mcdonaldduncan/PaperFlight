@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/SnowParticle.meta
 guid: a237bdcd90efa274e9e8137ecc62ce95
+=======
+guid: 7d77dd909ccc2874991ebd5b9a4cdf5d
+>>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.):Assets/Models/TestMeshes.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
