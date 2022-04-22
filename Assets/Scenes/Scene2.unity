@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2112550168}
-  m_IndirectSpecularColor: {r: 0.04327238, g: 0.04461724, b: 0.058884095, a: 1}
+  m_IndirectSpecularColor: {r: 0.043229297, g: 0.044383842, b: 0.05930958, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -393,6 +393,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -406,6 +407,9 @@ PrefabInstance:
 =======
       value: 5
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 4
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
@@ -2457,8 +2461,9 @@ Transform:
   m_LocalScale: {x: 14363.281, y: 14363.281, z: 10256.578}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 --- !u!1001 &285579310
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2560,6 +2565,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
+=======
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
 --- !u!1001 &287126708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4723,11 +4730,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
       value: 2
 <<<<<<< HEAD
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 1
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6844,6 +6855,7 @@ Transform:
 --- !u!1 &1337563491
 GameObject:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -7199,12 +7211,18 @@ PrefabInstance:
 =======
     m_TransformParent: {fileID: 0}
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_Name
       value: rock5_LOD0_VersionB (1)
       objectReference: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
     - target: {fileID: -927199367670048503, guid: d8d8a6f732224aa4894a7531e153a833,
@@ -7219,18 +7237,24 @@ PrefabInstance:
 =======
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.79
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 275.1
@@ -7240,10 +7264,14 @@ PrefabInstance:
 =======
       value: -34.9
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: -34.9
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: -50.790054
@@ -7253,10 +7281,14 @@ PrefabInstance:
 =======
       value: 297.79
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 297.79
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalRotation.x
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 0.00000008064338
@@ -7266,10 +7298,14 @@ PrefabInstance:
 =======
       value: 0.000000065160876
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 0.000000065160876
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalRotation.y
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 0.989971
@@ -7279,10 +7315,14 @@ PrefabInstance:
 =======
       value: 0.6001212
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 0.6001212
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalRotation.z
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: -0.000000011508023
@@ -7292,10 +7332,14 @@ PrefabInstance:
 =======
       value: 0.000000048886076
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 0.000000048886076
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_LocalRotation.w
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 0.1412714
@@ -7305,10 +7349,14 @@ PrefabInstance:
 =======
       value: 0.7999091
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 0.7999091
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7322,6 +7370,9 @@ PrefabInstance:
 =======
       value: 8
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 7
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
@@ -7590,120 +7641,6 @@ MonoBehaviour:
   - {x: 1698.3939, y: 141.28548, z: 225.7048}
   modes: 00000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
   loop: 0
---- !u!1001 &1419348701
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1132252797886966, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_Name
-      value: SnowParticle (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -20.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -34.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 828.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 19.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 19.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4354726781645812, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 19.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: ShapeModule.type
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: ShapeModule.m_Scale.x
-      value: 13.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: ShapeModule.m_Scale.y
-      value: 26.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: ShapeModule.m_Scale.z
-      value: 4.37
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 198813189636111220, guid: 776ce08085a9bc546942be4d9fd63516,
-        type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 3000
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
 --- !u!1001 &1447758648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8129,11 +8066,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
       value: 3
 <<<<<<< HEAD
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 2
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8959,11 +8900,15 @@ Transform:
   m_LocalScale: {x: 16.69247, y: 11.771, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
   m_RootOrder: 7
 <<<<<<< HEAD
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+  m_RootOrder: 6
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1773756122
 GameObject:
@@ -10372,11 +10317,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
       value: 9
 <<<<<<< HEAD
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 8
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10609,11 +10558,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Scenes/Scene2.unity
       value: 4
 <<<<<<< HEAD
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+      value: 3
+>>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
