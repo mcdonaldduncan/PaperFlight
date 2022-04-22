@@ -394,6 +394,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
@@ -418,6 +419,9 @@ PrefabInstance:
 =======
       value: 4
 >>>>>>> parent of a7d0926 (Added snow system)
+=======
+      value: 7
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
@@ -889,6 +893,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
@@ -909,6 +914,9 @@ PrefabInstance:
 =======
       value: 55.799927
 >>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.)
+=======
+      value: 55.799927
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 1735958008480194263, guid: a1c1d456f995c7240b2ad6045e60b10d,
         type: 3}
@@ -994,6 +1002,7 @@ MonoBehaviour:
   speed: 10
   spline: {fileID: 1390707911}
   usingControllers: 1
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1423,6 +1432,8 @@ MonoBehaviour:
   caveCollider: {fileID: 2136913665}
 =======
 >>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
 --- !u!65 &106385935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1523,6 +1534,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 128559208}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1533,6 +1545,8 @@ Transform:
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
 --- !u!1001 &164663212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2358,6 +2372,7 @@ PrefabInstance:
     - target: {fileID: 8616939130607247117, guid: 605a46a399280724996ceb8e06dff5cb,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
       value: 0
       objectReference: {fileID: 0}
@@ -2558,6 +2573,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
 =======
 >>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8616939130607247117, guid: 605a46a399280724996ceb8e06dff5cb,
@@ -2590,7 +2607,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
     - target: {fileID: 8616939130607247117, guid: 605a46a399280724996ceb8e06dff5cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2599,11 +2619,14 @@ PrefabInstance:
 =======
 >>>>>>> parent of 11f6c0b (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
     m_RemovedComponents: []
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
   m_SourcePrefab: {fileID: 100100000, guid: 776ce08085a9bc546942be4d9fd63516, type: 3}
 =======
 >>>>>>> parent of a7d0926 (Added snow system):Assets/Scenes/Scene1.unity
 =======
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   m_SourcePrefab: {fileID: 100100000, guid: 605a46a399280724996ceb8e06dff5cb, type: 3}
 --- !u!4 &258177696 stripped
 Transform:
@@ -2611,9 +2634,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 258177695}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 >>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
 =======
 >>>>>>> parent of a7d0926 (Added snow system)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
 --- !u!1001 &287126708
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3596,6 +3622,7 @@ Transform:
   - {fileID: 2115839090}
   - {fileID: 705317871}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
@@ -3603,11 +3630,14 @@ Transform:
 <<<<<<< HEAD
 =======
 >>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   - {fileID: 50843557}
   - {fileID: 1281614749}
   - {fileID: 1261798006}
   - {fileID: 254997018}
   - {fileID: 1330832946}
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 =======
 =======
@@ -3633,6 +3663,8 @@ Transform:
 >>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
 =======
 >>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   m_Father: {fileID: 681411983}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3880,6 +3912,7 @@ Transform:
 >>>>>>> parent of be9163e (test):Assets/Scenes/Scene1.unity
 =======
   - {fileID: 5006512735959156829}
+<<<<<<< HEAD
 >>>>>>> parent of 11f6c0b (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
   - {fileID: 20076699}
   - {fileID: 876078961}
@@ -3893,6 +3926,8 @@ Transform:
 >>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/Scenes/Scene1.unity
 =======
 >>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   m_Father: {fileID: 1676988090}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4796,6 +4831,7 @@ PrefabInstance:
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_RootOrder
       value: 36
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 =======
       value: 2
@@ -4822,6 +4858,8 @@ PrefabInstance:
 =======
       value: 1
 >>>>>>> parent of a7d0926 (Added snow system)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 358464627c45ed2459452fec5a7663e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5125,6 +5163,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 681411983}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
@@ -5145,6 +5184,9 @@ Transform:
 =======
   m_RootOrder: 15
 >>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.)
+=======
+  m_RootOrder: 15
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1010549405
 PrefabInstance:
@@ -5667,6 +5709,9 @@ CanvasRenderer:
 --- !u!1 &1054918332
 GameObject:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5686,6 +5731,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054918332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -5719,6 +5765,8 @@ Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054918332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -7491,6 +7539,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD
@@ -7515,6 +7564,9 @@ PrefabInstance:
 =======
       value: 7
 >>>>>>> parent of a7d0926 (Added snow system)
+=======
+      value: 39
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d8d8a6f732224aa4894a7531e153a833,
         type: 3}
@@ -7759,6 +7811,9 @@ MonoBehaviour:
   - {x: 1068.2943, y: 98.09413, z: 163.5477}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   - {x: 1086.387, y: 95.78079, z: 154.22894}
   - {x: 1143.0566, y: 98.90408, z: 121.50877}
   - {x: 1199.7263, y: 102.027374, z: 88.788605}
@@ -7766,6 +7821,7 @@ MonoBehaviour:
   - {x: 1363.4016, y: 111.97254, z: 67.12497}
   - {x: 1487.3575, y: 122.37318, z: 80.33385}
   - {x: 1529.1274, y: 131.71997, z: 113.7838}
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
@@ -7780,6 +7836,8 @@ MonoBehaviour:
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
 =======
 >>>>>>> parent of cc4e1b7 (Made scene prefab)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   - {x: 1698.3939, y: 141.28548, z: 225.7048}
   modes: 00000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
   loop: 0
@@ -7950,6 +8008,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1452675123}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &1452675123
 =======
 >>>>>>> parent of a7d0926 (Added snow system)
@@ -8035,6 +8094,8 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1452675123}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
 --- !u!1001 &1513987075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8257,6 +8318,7 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_RootOrder
       value: 37
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 =======
       value: 3
@@ -8309,6 +8371,8 @@ PrefabInstance:
 =======
       value: 2
 >>>>>>> parent of a7d0926 (Added snow system)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 805c67df44184af4397411e0ea8b8c50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9121,6 +9185,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1676988090}
   m_RootOrder: 5
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 =======
   m_Father: {fileID: 0}
@@ -9149,6 +9214,8 @@ Transform:
 =======
   m_RootOrder: 6
 >>>>>>> parent of a7d0926 (Added snow system)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1773756122
 GameObject:
@@ -10546,6 +10613,7 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_RootOrder
       value: 40
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 =======
       value: 9
@@ -10572,6 +10640,8 @@ PrefabInstance:
 =======
       value: 8
 >>>>>>> parent of a7d0926 (Added snow system)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10793,6 +10863,7 @@ PrefabInstance:
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_RootOrder
       value: 38
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 =======
       value: 4
@@ -10819,6 +10890,8 @@ PrefabInstance:
 =======
       value: 3
 >>>>>>> parent of a7d0926 (Added snow system)
+=======
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f28e8463f4463eb48afeccffe267583f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11916,6 +11989,7 @@ Transform:
   - {fileID: 2055440928}
   m_Father: {fileID: 681411983}
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
 <<<<<<< HEAD:Assets/Scenes/Scene2.unity
@@ -11936,6 +12010,9 @@ Transform:
 =======
   m_RootOrder: 19
 >>>>>>> parent of 0721526 (Added the cave exit covering and new ice shaders to some rocks.)
+=======
+  m_RootOrder: 19
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian')
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -35.021}
 --- !u!1 &8296172668039101006
 GameObject:

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Textures/Rocks1.meta
 guid: b50eab803767ab04bb70f633f0d3c8cf
+=======
+guid: 4f68137c8cdc12441ae8417d46880089
+>>>>>>> parent of 64fccf9 (Merge branch 'Brian'):Assets/StreamingAssets/Audio/GeneratedSoundBanks.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
