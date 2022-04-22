@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AudioManagement : MonoBehaviour
 {
+    [SerializeField] Transform target;
     [SerializeField] AudioSource caveAudio;
     [SerializeField] AudioSource baseMelody;
     [SerializeField] AudioSource baseStrings;
@@ -26,6 +27,11 @@ public class AudioManagement : MonoBehaviour
 
     void Update()
     {
+        if (target != null)
+        {
+            transform.position = target.position;
+        }
+
         CheckAudioStart();
         CheckAudioEnd();
     }
@@ -63,8 +69,4 @@ public class AudioManagement : MonoBehaviour
 
         yield break;
     }
-
-
-
-
 }
