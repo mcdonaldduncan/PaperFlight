@@ -4,68 +4,69 @@ using UnityEngine;
 
 public class AudioManagement : MonoBehaviour
 {
+    [SerializeField] Transform target;
     [SerializeField] AudioSource caveAudio;
     [SerializeField] AudioSource baseMelody;
     [SerializeField] AudioSource baseStrings;
     [SerializeField] Collider caveCollider;
+    [SerializeField] float fadeSpeed;
+
+    float fullVolume = 1;
+    float minVolume = 0;
 
     Bounds bounds;
 
     void Start()
     {
         bounds = caveCollider.bounds;
+
+        baseStrings.volume = fullVolume;
+        caveAudio.volume = minVolume;
+        baseMelody.volume = fullVolume;
     }
 
     void Update()
     {
+        if (target != null)
+        {
+            transform.position = target.position;
+        }
+
         CheckAudioStart();
         CheckAudioEnd();
     }
 
     void CheckAudioStart()
     {
-        if (caveAudio.isPlaying)
+        if (caveAudio.volume != minVolume)
             return;
-
         if (bounds.Contains(transform.position))
         {
-            caveAudio.Play();
-            baseStrings.Play();
-            baseMelody.Stop();
+            StartCoroutine(FadeAudio(caveAudio, fullVolume));
+            StartCoroutine(FadeAudio(baseMelody, minVolume));
         }
     }
 
     void CheckAudioEnd()
     {
-        if (!caveAudio.isPlaying)
+        if (caveAudio.volume != fullVolume)
             return;
-
         if (!bounds.Contains(transform.position))
         {
-            caveAudio.Stop();
-            baseStrings.Play();
-            baseMelody.Play();
+            StartCoroutine(FadeAudio(caveAudio, minVolume));
+            StartCoroutine(FadeAudio(baseMelody, fullVolume));
         }
     }
 
-    //void OnCollisionEnter(Collision collision)
-    //{
-    //    Debug.Log("Collision Enter");
-    //    if (!caveAudio.isPlaying)
-    //    {
-    //        caveAudio.Play();
-    //        baseMelody.Stop();
-    //    }
-    //}
+    IEnumerator FadeAudio(AudioSource audioToAdjust, float volume)
+    {
+        while (audioToAdjust.volume != volume)
+        {
+            float step = fadeSpeed * Time.deltaTime;
+            audioToAdjust.volume = Mathf.MoveTowards(audioToAdjust.volume, volume, step);
+            yield return null;
+        }
 
-
-    //void OnCollisionExit(Collision collision)
-    //{
-    //    Debug.Log("Collision Exit");
-    //    if (caveAudio.isPlaying)
-    //    {
-    //        caveAudio.Stop();
-    //        baseMelody.Play();
-    //    }
-    //}
+        yield break;
+    }
 }
