@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2112550168}
-  m_IndirectSpecularColor: {r: 0.04327238, g: 0.04461724, b: 0.058884095, a: 1}
+  m_IndirectSpecularColor: {r: 0.043393537, g: 0.044554476, b: 0.059299786, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6562,6 +6562,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1065966417975912506, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
+        type: 3}
+      propertyPath: caveCollider
+      value: 
+      objectReference: {fileID: 2136913665}
+    - target: {fileID: 1065966417975912506, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 258177696}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ed69977b66c6143a7cdd06f5bd2a3f, type: 3}
 --- !u!4 &1303411279 stripped
