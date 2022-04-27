@@ -49,6 +49,8 @@ public class SplineWalker : MonoBehaviour
 
         initialSpeed = speed;
 
+        progress = .5f;
+
         //currentTimePoints = timePointsList[0];
     }
 
