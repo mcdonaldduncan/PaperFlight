@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Wwise.meta
+guid: 19f1075b67f799b40812ece6d720153e
+========
+guid: 7b2c65fba51963145bcfe9ebced58f1c
+>>>>>>>> master:Assets/Models/Mountain/texture.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
