@@ -47,10 +47,10 @@ public class PeterAudio : MonoBehaviour
             transform.position = target.position;
         }
 
-        CheckCaveStart();
-        CheckLakeStart();
-        CheckBirdStart();
-        CheckMountainStart();
+        //CheckCaveStart();
+        //CheckLakeStart();
+        //CheckBirdStart();
+        //CheckMountainStart();
     }
 
     void CheckCaveStart()
@@ -67,7 +67,7 @@ public class PeterAudio : MonoBehaviour
 
     void CheckLakeStart()
     {
-        if (pianoSparks.volume != fullVolume)
+        if (stringsEnsemble.volume != minVolume)
             return;
         if (lakeBounds.Contains(transform.position))
         {
@@ -78,7 +78,7 @@ public class PeterAudio : MonoBehaviour
 
     void CheckBirdStart()
     {
-        if (stringsEnsemble.volume != fullVolume)
+        if (bassoonMelody.volume != minVolume)
             return;
         if (birdBounds.Contains(transform.position))
         {
@@ -91,6 +91,8 @@ public class PeterAudio : MonoBehaviour
     {
         if (mountainBounds.Contains(transform.position))
         {
+            if (hornEnsemble.volume != minVolume)
+                return;
             StartCoroutine(FadeAudio(hornEnsemble, fullVolume));
             StartCoroutine(FadeAudio(stringsEnsemble, fullVolume));
             StartCoroutine(FadeAudio(pianoSparks, minVolume));
