@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows.meta
 guid: bd2242464ecb1b049ad190354d3aef70
+========
+guid: 84f796411a5ef044c929ee713f624236
+>>>>>>>> david-lighting:Assets/SnowParticle.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
