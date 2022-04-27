@@ -7,6 +7,8 @@ public class NodePathfinder : MonoBehaviour
     [SerializeField] Transform[] nodes;
     [SerializeField] Transform plane;
     [SerializeField] Collider col;
+    [SerializeField] AudioSource birdAudio;
+    [SerializeField] AudioClip birdClip;
     [SerializeField] float speed;
     [SerializeField] int index;
 
@@ -49,6 +51,11 @@ public class NodePathfinder : MonoBehaviour
         if (shouldMove)
             return;
         if (colBounds.Contains(plane.position))
+        {
             shouldMove = true;
+            birdAudio.PlayOneShot(birdClip);
+        }
+            
+
     }
 }
