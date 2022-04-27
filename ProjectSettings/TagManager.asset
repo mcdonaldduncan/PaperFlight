@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cave
+  - Mountain
+  - Birds
+  - Lake
   layers:
   - Default
   - TransparentFX
