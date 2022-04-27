@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Wwise/API.meta
-guid: 30eb6f885bec1304ea0dd5025f28ee63
-========
-guid: ffa07e9b129e63f489791ee4637c799c
->>>>>>>> master:Assets/Scenes/MiscFiles.meta
+guid: 61d14b5fdf2e8104fb73f8085f57f501
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

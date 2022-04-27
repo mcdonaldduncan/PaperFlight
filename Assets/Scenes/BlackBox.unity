@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2112550168}
-  m_IndirectSpecularColor: {r: 0.043387376, g: 0.044548247, b: 0.05929023, a: 1}
+  m_IndirectSpecularColor: {r: 0.23236844, g: 0.23554417, b: 0.27230176, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 112000000, guid: 365a0e4f6ce642a44a74ac0af3553188,
+  m_LightingDataAsset: {fileID: 112000000, guid: cbc7e8b220c4d5e4fa43b1cf7669210b,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -1071,10 +1071,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abea33a3d9e7f947b123ea7795d8e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   caveAudio: {fileID: 106385930}
   baseMelody: {fileID: 106385928}
   baseStrings: {fileID: 106385931}
   caveCollider: {fileID: 2136913665}
+  fadeSpeed: 0
 --- !u!65 &106385935
 BoxCollider:
   m_ObjectHideFlags: 0
