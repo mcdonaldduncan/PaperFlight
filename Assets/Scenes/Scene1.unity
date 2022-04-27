@@ -856,8 +856,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePointsList: []
-  speed: 20
-  spline: {fileID: 0}
+  speed: 10
+  spline: {fileID: 1185833231}
   usingControllers: 1
 --- !u!65 &106385935
 BoxCollider:
