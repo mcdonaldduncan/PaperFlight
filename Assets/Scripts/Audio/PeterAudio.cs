@@ -101,6 +101,34 @@ public class PeterAudio : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Cave"))
+        {
+            StartCoroutine(FadeAudio(pianoSparks, fullVolume));
+            StartCoroutine(FadeAudio(stringsEnsemble, minVolume));
+            StartCoroutine(FadeAudio(fluteMelody, fullVolume));
+        }
+        else if (other.CompareTag("Lake"))
+        {
+            StartCoroutine(FadeAudio(fluteMelody, minVolume));
+            StartCoroutine(FadeAudio(stringsEnsemble, fullVolume));
+        }
+        else if (other.CompareTag("Birds"))
+        {
+            StartCoroutine(FadeAudio(stringsEnsemble, minVolume));
+            StartCoroutine(FadeAudio(bassoonMelody, fullVolume));
+        }
+        else if (other.CompareTag("Mountain"))
+        {
+            StartCoroutine(FadeAudio(hornEnsemble, fullVolume));
+            StartCoroutine(FadeAudio(stringsEnsemble, fullVolume));
+            StartCoroutine(FadeAudio(pianoSparks, minVolume));
+            StartCoroutine(FadeAudio(pianoHarmony, minVolume));
+            StartCoroutine(FadeAudio(bassoonMelody, minVolume));
+        }
+    }
+
     IEnumerator FadeAudio(AudioSource audioToAdjust, float volume)
     {
         while (audioToAdjust.volume != volume)

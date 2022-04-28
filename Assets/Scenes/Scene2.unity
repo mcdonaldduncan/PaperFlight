@@ -1564,7 +1564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &227392789
 Transform:
   m_ObjectHideFlags: 0
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   lakeCollider: {fileID: 328418857}
   mountainCollider: {fileID: 874104160}
   birdCollider: {fileID: 518803169}
-  fadeSpeed: 0.075
+  fadeSpeed: 0.1
 --- !u!82 &227392791
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2187,7 +2187,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227392788}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -3016,7 +3016,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328418855}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.16133747, z: 0.4542753}
@@ -4361,7 +4361,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874104158}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 146.36765, y: 90.010445, z: 163.75273}
@@ -7476,6 +7476,16 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 258177696}
+    - target: {fileID: 1065966417815849351, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065966417815849349, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ed69977b66c6143a7cdd06f5bd2a3f, type: 3}
 --- !u!4 &1303411279 stripped
@@ -11559,7 +11569,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136913663}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 268.60483, y: 68.774765, z: 246.05028}
@@ -11845,6 +11855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Birds
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549680413184392623, guid: 4778d5507a92cf1449136256df13f0ae,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4778d5507a92cf1449136256df13f0ae, type: 3}
