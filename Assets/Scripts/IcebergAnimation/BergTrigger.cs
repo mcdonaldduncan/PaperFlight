@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class BergTrigger : MonoBehaviour
 {
-    Bounds colBounds;
-    public bool funny = false;
-    [SerializeField] Collider col;
     [SerializeField] private Animator myAnimator;
-    [SerializeField] Transform plane;
 
     void Start()
     {
-        funny = false;
-        colBounds = col.bounds;
+        myAnimator.SetBool("Berg", false);
     }
 
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (colBounds.Contains(plane.position))
+        if (other.CompareTag("Player"))
+        {
             myAnimator.SetBool("Berg", true);
-        funny = true;
+        }
+        
     }
 }
