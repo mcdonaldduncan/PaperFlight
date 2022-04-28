@@ -287,6 +287,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 682534230}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
+        type: 3}
+      propertyPath: m_Name
+      value: mountainuvdone3
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1a0abfea80fdd024da265be439e5498b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,21 +377,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: df617ee6812cf0144ab2ea5e3f124f3f, type: 2}
-    - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
-        type: 3}
-      propertyPath: m_Name
-      value: mountainuvdone3
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 1a0abfea80fdd024da265be439e5498b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0abfea80fdd024da265be439e5498b, type: 3}
 --- !u!1001 &31065456
@@ -2993,7 +2993,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &328418856
 Transform:
   m_ObjectHideFlags: 0
@@ -4338,7 +4338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &874104159
 Transform:
   m_ObjectHideFlags: 0
@@ -11721,6 +11721,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BirdObjects
       objectReference: {fileID: 0}
+    - target: {fileID: 2549680413184392621, guid: 4778d5507a92cf1449136256df13f0ae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Birds
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549680413184392623, guid: 4778d5507a92cf1449136256df13f0ae,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2549680412871785823, guid: 4778d5507a92cf1449136256df13f0ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11883,16 +11893,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 89254a5f2f4d8334e923ba90ab1b8684, type: 2}
-    - target: {fileID: 2549680413184392621, guid: 4778d5507a92cf1449136256df13f0ae,
-        type: 3}
-      propertyPath: m_TagString
-      value: Birds
-      objectReference: {fileID: 0}
-    - target: {fileID: 2549680413184392623, guid: 4778d5507a92cf1449136256df13f0ae,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4778d5507a92cf1449136256df13f0ae, type: 3}
 --- !u!4 &2549680413440139289 stripped
