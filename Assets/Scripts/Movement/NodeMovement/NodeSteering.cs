@@ -27,7 +27,7 @@ public class NodeSteering : MonoBehaviour
 
     void FollowNodes()
     {
-        if (transform.position.z > nodes[index].position.z + 5f || transform.position == nodes[index].position)
+        if (transform.position.z > nodes[index].position.z + 1f || transform.position == nodes[index].position)
             index++;
 
         if (index == nodes.Length)
@@ -35,19 +35,23 @@ public class NodeSteering : MonoBehaviour
 
         acceleration += Steering(index);
         velocity += acceleration;
+
+        // Intended to slowly rotate, sorta works but stutters
+        //float step = maxChange * Time.deltaTime;
+        //Vector3 lookRotation = Vector3.MoveTowards(transform.position, transform.position + velocity, step);
+        //transform.rotation = Quaternion.Euler(lookRotation);
+        //transform.rotation = Quaternion.FromToRotation(transform.position, lookRotation);
+        //transform.LookAt(lookRotation);
+
+        transform.LookAt(transform.position + velocity);
+
         velocity = Vector3.ClampMagnitude(velocity, maxSpeed);
+        //velocity.Normalize();
+        //velocity *= maxSpeed;
 
         transform.position += velocity * Time.deltaTime;
         acceleration = Vector3.zero;
-
-
-
-        // Intended to slowly rotate, doesn't work
-        float step = maxChange * Time.deltaTime;
-        Vector3 lookRotation = Vector3.MoveTowards(transform.position, transform.position + velocity, step);
-        //transform.rotation = Quaternion.Euler(lookRotation);
-        //transform.rotation = Quaternion.FromToRotation(transform.position, lookRotation);
-        transform.LookAt(lookRotation);
+        
     }
 
     Vector3 Steering(int nodeIndex)
@@ -56,7 +60,8 @@ public class NodeSteering : MonoBehaviour
         desired = desired.normalized;
         desired *= maxSpeed;
         Vector3 steer = desired - velocity;
-        steer = Vector3.ClampMagnitude(steer, maxForce);
+        steer = steer.normalized;
+        steer *= maxForce;
         return steer;
     }
 }
