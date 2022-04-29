@@ -56,7 +56,7 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
-    m_BakeResolution: 20
+    m_BakeResolution: 40
     m_AtlasSize: 1024
     m_AO: 1
     m_AOMaxDistance: 1
@@ -899,8 +899,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.20143628, z: 1.1863657}
+  m_Center: {x: -3.9716358e-16, y: 0.09365093, z: 0.16465285}
 --- !u!1001 &120744171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2486,6 +2486,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 605a46a399280724996ceb8e06dff5cb,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 605a46a399280724996ceb8e06dff5cb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 605a46a399280724996ceb8e06dff5cb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66
+      objectReference: {fileID: 0}
     - target: {fileID: -4212318927234073314, guid: 605a46a399280724996ceb8e06dff5cb,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -2590,6 +2605,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SkinnedMotionVectors
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3392271577003174410, guid: 605a46a399280724996ceb8e06dff5cb,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5333380548561536385, guid: 605a46a399280724996ceb8e06dff5cb,
         type: 3}
@@ -7198,7 +7218,7 @@ MonoBehaviour:
   coupleZ: 0
   target: {fileID: 258177696}
   xOffset: 0
-  yOffset: -0.5
+  yOffset: -0.55
   zOffset: 0
   rotationDelta: 2
 --- !u!1 &1143394959
