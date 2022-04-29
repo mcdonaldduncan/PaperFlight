@@ -6,11 +6,11 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DarkRock
-  m_DiffuseTexture: {fileID: 2800000, guid: a922865be84bce940bfc13013749861c, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: cdea913c01943bc47b170008157286c7, type: 3}
+  m_Name: Snow2
+  m_DiffuseTexture: {fileID: 2800000, guid: 4e87cfc3cdb6ee84aaa39b63abae7e67, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: 09fef9dc6c1693a4491de16a53ee2eec, type: 3}
   m_MaskMapTexture: {fileID: 0}
-  m_TileSize: {x: 40, y: 15}
+  m_TileSize: {x: 2, y: 2}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
   m_Metallic: 0
