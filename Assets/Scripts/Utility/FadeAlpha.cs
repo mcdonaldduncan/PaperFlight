@@ -54,7 +54,7 @@ public class FadeAlpha : MonoBehaviour
             if(!hasFadedToClear)
             {
                 ScreenFader.Instance.FadeToClearFromBlack(duration: 5);
-                player.GetComponent<SplineWalker>().enabled = true;
+                player.gameObject.SetActive(true);
                 hasFadedToClear = true;
             }
         }
