@@ -32,33 +32,27 @@ public class SplineWalker : MonoBehaviour
 
     private int pointIndex = 0;
 
-    bool hasReachedPointA = false;
-    bool hasReachedHalfway = false;
-    bool hasReachedPointB = false;
+    private bool hasReachedPointA = false;
+    private bool hasReachedHalfway = false;
+    private bool hasReachedPointB = false;
 
-    float halfway;
+    private float halfway;
 
-    public bool usingControllers;
+    [SerializeField] private bool usingControllers;
     private IVRInputDevice inputDevice;
-    private float triggerInputValue;
-
+    private string vrAxisTwo;
 
     private void Start()
     {
         speed /= 1000;
-
+        vrAxisTwo = VRAxis.Two;
         initialSpeed = speed;
-
-        //currentTimePoints = timePointsList[0];
     }
 
     private void Update()
     {
         MoveAlongSpline();
         RotateAlongSpline();
-
-        //Debug.Log(speed);
-        //Debug.Log(progress);
 
         if(usingControllers)
             SetTriggerInputValue();
@@ -179,27 +173,17 @@ public class SplineWalker : MonoBehaviour
     private void SetTriggerInputValue()
     {
         float maxSpeed = initialSpeed;
+
         if (inputDevice == null)
         {
             inputDevice = VRDevice.Device.PrimaryInputDevice;
             return;
         }
 
-        //Debug.Log(VRDevice.DeviceName);
-
-        //Debug.Log(inputDevice.Name);
         float step = Time.deltaTime * .005f;
 
-        float speedGoal = maxSpeed / (1 + inputDevice.GetAxis1D(VRAxis.Two));
+        float speedGoal = maxSpeed / (1 + inputDevice.GetAxis1D(vrAxisTwo));
 
         speed = Mathf.MoveTowards(speed, speedGoal, step);
-
-
-        //speed = maxSpeed / (1 + inputDevice.GetAxis1D(VRAxis.Two) * 5);
-
-        //Debug.Log(inputDevice.GetButtonDown(VRButton.Trigger));
-
-
-        // Debug.Log(inputDevice.GetAxis1D(VRAxis.Two));
     }
 }
