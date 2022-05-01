@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2112550168}
-  m_IndirectSpecularColor: {r: 0.23137406, g: 0.23375958, b: 0.27176112, a: 1}
+  m_IndirectSpecularColor: {r: 0.043054394, g: 0.04430721, b: 0.059131786, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -56,8 +56,8 @@ LightmapSettings:
   m_LightmapEditorSettings:
     serializedVersion: 12
     m_Resolution: 2
-    m_BakeResolution: 30
-    m_AtlasSize: 1024
+    m_BakeResolution: 10
+    m_AtlasSize: 2048
     m_AO: 1
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -72,7 +72,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 0
+    m_MixedBakeMode: 1
     m_BakeBackend: 2
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
@@ -97,7 +97,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 112000000, guid: 4679f7330d803664e9c04b40cb26ddbd,
+  m_LightingDataAsset: {fileID: 112000000, guid: 755d811ff39e7cf4fa84ad6ddee9720d,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -599,6 +599,100 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 60940004}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &63555157
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_Name
+      value: model
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 61.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -40.28
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 458.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.016473485
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.034008436
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.010275481
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.999233
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -1.927
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 3.88
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.113
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.028079
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1437442
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.1437442
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: f9e51af8d9b1fe24ea277596d264440a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f9573178c5acacf49b27ef515ff49d30, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9e51af8d9b1fe24ea277596d264440a, type: 3}
 --- !u!1001 &84938124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13455,6 +13549,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BirdObjects
       objectReference: {fileID: 0}
+    - target: {fileID: 2549680413184392621, guid: 4778d5507a92cf1449136256df13f0ae,
+        type: 3}
+      propertyPath: m_TagString
+      value: Birds
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549680413184392623, guid: 4778d5507a92cf1449136256df13f0ae,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2549680412871785823, guid: 4778d5507a92cf1449136256df13f0ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13617,16 +13721,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 89254a5f2f4d8334e923ba90ab1b8684, type: 2}
-    - target: {fileID: 2549680413184392621, guid: 4778d5507a92cf1449136256df13f0ae,
-        type: 3}
-      propertyPath: m_TagString
-      value: Birds
-      objectReference: {fileID: 0}
-    - target: {fileID: 2549680413184392623, guid: 4778d5507a92cf1449136256df13f0ae,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4778d5507a92cf1449136256df13f0ae, type: 3}
 --- !u!4 &2549680413440139289 stripped
