@@ -1141,7 +1141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timePointsList: []
-  speed: 10
+  totalDuration: 0
   spline: {fileID: 299653200}
   usingControllers: 1
 --- !u!65 &106385935
@@ -4396,7 +4396,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 697e16e9e9701c04a933326e80d3a45b,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 697e16e9e9701c04a933326e80d3a45b,
         type: 3}
@@ -10067,7 +10067,7 @@ PrefabInstance:
     - target: {fileID: 762208695553941706, guid: 353c938ee798f394abf6d4aeb2ba42c9,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7415097926203774543, guid: 353c938ee798f394abf6d4aeb2ba42c9,
         type: 3}
