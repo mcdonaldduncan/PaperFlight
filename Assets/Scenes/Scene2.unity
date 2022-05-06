@@ -2784,8 +2784,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4259655, y: 0.6502656, z: 0.5642099}
-  m_Center: {x: -0.3301753, y: -0.1748673, z: 0.21789502}
+  m_Size: {x: 0.4259655, y: 0.6502656, z: 0.61579996}
+  m_Center: {x: -0.3301753, y: -0.1748673, z: 0.19209997}
 --- !u!4 &337702731
 Transform:
   m_ObjectHideFlags: 0
@@ -9253,6 +9253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EndUI: {fileID: 0}
   Game: {fileID: 681411982}
+  aurora: {fileID: 1224924690}
+  target: {fileID: 258177696}
   FadeEnd: 0
 --- !u!54 &1616105851
 Rigidbody:
