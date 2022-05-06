@@ -34,11 +34,11 @@ public class SplineWalker : MonoBehaviour
 
     private int pointIndex = 0;
 
-    bool hasReachedPointA = false;
-    bool hasReachedHalfway = false;
-    bool hasReachedPointB = false;
+    private bool hasReachedPointA = false;
+    private bool hasReachedHalfway = false;
+    private bool hasReachedPointB = false;
 
-    float halfway;
+    private float halfway;
 
     [SerializeField] private bool usingControllers;
     private IVRInputDevice inputDevice;
@@ -49,6 +49,7 @@ public class SplineWalker : MonoBehaviour
         initialDuration = totalDuration;
         currentTimePoints = timePointsList[0];
         progress = startProgress;
+        vrAxisTwo = VRAxis.Two;
     }
 
     private void Update()
