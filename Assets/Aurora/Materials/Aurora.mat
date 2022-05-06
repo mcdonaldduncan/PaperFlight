@@ -109,7 +109,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _FallSpeed: 0.5
-    - _Flow: 2
+    - _Flow: 2.5
     - _FlowY: 1
     - _FoamDensity: 0.85
     - _FoamIntensity: 0.5
@@ -118,7 +118,7 @@ Material:
     - _GlossyReflections: 1
     - _Intensity: 150
     - _IterationStep: 0.005
-    - _Iterations: 45
+    - _Iterations: 30
     - _LightStartY: 0.5
     - _MapScale: 1
     - _Metallic: 0
