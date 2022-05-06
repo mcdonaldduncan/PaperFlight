@@ -24,7 +24,6 @@ public class End : MonoBehaviour
     {
         ScreenFader.Instance.FadeTo(Color.black, duration: 1);
         yield return ScreenFader.Instance.WaitUntilFadeComplete();
-        MoveAurora();
         Game.SetActive(false);
 
         if(!FadeEnd)
@@ -32,11 +31,6 @@ public class End : MonoBehaviour
             ScreenFader.Instance.FadeToClear(duration: 1);
             EndUI.SetActive(true);
         }
-    }
-
-    void MoveAurora()
-    {
-        aurora.position = new Vector3(aurora.position.x, aurora.position.y, target.position.y);
     }
 
     public void EndGame()
