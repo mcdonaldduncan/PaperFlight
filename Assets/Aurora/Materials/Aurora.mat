@@ -116,7 +116,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _Intensity: 50
+    - _Intensity: 150
     - _IterationStep: 0.005
     - _Iterations: 45
     - _LightStartY: 0.5
