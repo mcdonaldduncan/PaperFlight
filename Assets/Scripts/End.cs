@@ -33,6 +33,11 @@ public class End : MonoBehaviour
         }
     }
 
+    void RepositionAurora()
+    {
+        aurora.transform.position = new Vector3(target.position.x, aurora.transform.position.y, aurora.transform.position.z + 1000f);
+    }
+
     public void EndGame()
     {
         //Application.Quit();
