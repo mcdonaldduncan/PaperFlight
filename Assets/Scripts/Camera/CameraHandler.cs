@@ -30,9 +30,12 @@ public class CameraHandler : MonoBehaviour
     [Header("Assign value to smooth rotation by")]
     [SerializeField] float rotationDelta;
 
+    float zoomXOffset;
+    float zoomYOffset;
+    float zoomZOffset;
+
     void LateUpdate()
     {
-
         Follow();
     }
 
@@ -40,8 +43,7 @@ public class CameraHandler : MonoBehaviour
     {
         if (fixedOffset)
         {
-            OffsetTargetFollow();
-            
+            OffsetTargetFollow();           
         }
         if (thirdPerson)
         {
@@ -111,5 +113,13 @@ public class CameraHandler : MonoBehaviour
     void ThirdPersonRotation()
     {
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, target.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Zoom"))
+        {
+            fixedOffset = false;
+        }
     }
 }

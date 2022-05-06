@@ -57,9 +57,7 @@ public class SplineWalker : MonoBehaviour
         RotateAlongSpline();
 
         if (usingControllers)
-            SetTriggerInputValue();
-
-        
+            SetTriggerInputValue();      
     }
 
     void MoveAlongSpline()
@@ -130,8 +128,6 @@ public class SplineWalker : MonoBehaviour
 
             if (hasReachedPointB)
                 hasReachedPointB = false;
-
-            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.blue);
         }
     }
 
