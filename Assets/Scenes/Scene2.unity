@@ -863,6 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b73085d978a8d04584afcbaa97e2817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startProgress: 0
   timePointsList:
   - PointA: 0.35
     PointB: 0.99
@@ -12871,6 +12872,12 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1065966417815849349, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -639225128517996981, guid: e8a43ef61887bc2458e5b06f63eb3129,
+        type: 2}
     - target: {fileID: 1065966418154788012, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
         type: 3}
       propertyPath: MaxDistance
@@ -12881,11 +12888,29 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 1bd9c1f3e177b274a8c6409a9bc8001b, type: 3}
+    - target: {fileID: 1065966418154788012, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 715923579146240711, guid: e8a43ef61887bc2458e5b06f63eb3129,
+        type: 2}
     - target: {fileID: 1065966417759461637, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 57acf05e51df5fc4c946ab70fc8e900d, type: 3}
+    - target: {fileID: 1065966417759461637, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -6056603029970966626, guid: e8a43ef61887bc2458e5b06f63eb3129,
+        type: 2}
+    - target: {fileID: 1065966417101239616, guid: f8ed69977b66c6143a7cdd06f5bd2a3f,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -3947249429642250165, guid: e8a43ef61887bc2458e5b06f63eb3129,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8ed69977b66c6143a7cdd06f5bd2a3f, type: 3}
 --- !u!4 &1303411279 stripped
