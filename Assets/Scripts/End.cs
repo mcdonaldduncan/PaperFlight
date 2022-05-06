@@ -8,7 +8,10 @@ public class End : MonoBehaviour
 {
     [SerializeField] private GameObject EndUI;
     [SerializeField] private GameObject Game;
+    [SerializeField] Transform aurora;
+    [SerializeField] Transform target;
     [SerializeField] private bool FadeEnd;
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -28,6 +31,11 @@ public class End : MonoBehaviour
             ScreenFader.Instance.FadeToClear(duration: 1);
             EndUI.SetActive(true);
         }
+    }
+
+    void RepositionAurora()
+    {
+        aurora.transform.position = new Vector3(target.position.x, aurora.transform.position.y, aurora.transform.position.z + 1000f);
     }
 
     public void EndGame()

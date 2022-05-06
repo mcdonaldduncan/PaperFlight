@@ -30,7 +30,6 @@ public class WindManagement : MonoBehaviour
         {
             StartCoroutine(FadeAudio(windAudio, minVolume));
         }
-        
     }
 
     private void OnTriggerExit(Collider other)

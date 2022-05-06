@@ -46,11 +46,6 @@ public class PeterAudio : MonoBehaviour
         {
             transform.position = target.position;
         }
-
-        //CheckCaveStart();
-        //CheckLakeStart();
-        //CheckBirdStart();
-        //CheckMountainStart();
     }
 
     void CheckCaveStart()
