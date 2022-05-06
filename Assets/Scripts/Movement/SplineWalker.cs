@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 public class SplineWalker : MonoBehaviour
 {
+    [SerializeField] float startProgress;
+
     [Serializable]
     private struct TimePoints
     {
@@ -46,6 +48,7 @@ public class SplineWalker : MonoBehaviour
     {
         initialDuration = totalDuration;
         currentTimePoints = timePointsList[0];
+        progress = startProgress;
     }
 
     private void Update()
