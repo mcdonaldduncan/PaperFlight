@@ -29,6 +29,8 @@ public class SplineWalker : MonoBehaviour
     private float initialDuration;
     private float progress;
     private TimePoints currentTimePoints;
+    private TimePoints nextTimePoints;
+    private bool usingTimePoints;
 
     private float targetDuration;
 
@@ -48,8 +50,19 @@ public class SplineWalker : MonoBehaviour
     {
         initialDuration = totalDuration;
         currentTimePoints = timePointsList[0];
+
         progress = startProgress;
         vrAxisTwo = VRAxis.Two;
+
+        Time.timeScale = 2;
+
+        if (timePointsList.Count > 0)
+        {
+            usingTimePoints = true;
+
+            if (timePointsList.Count > 1)
+                nextTimePoints = timePointsList[1];
+        }
     }
 
     private void Update()
@@ -58,14 +71,16 @@ public class SplineWalker : MonoBehaviour
         RotateAlongSpline();
 
         if (usingControllers)
-            SetTriggerInputValue();      
+            SetTriggerInputValue();
+
+        Debug.Log(progress);
     }
 
     void MoveAlongSpline()
     {
         if (progress < 1f)
         {
-            if (timePointsList.Count > 0)
+            if (usingTimePoints)
             {
                 ChangeSpeed();// slow or speed up travel along spline to make things smoother
             }
@@ -89,6 +104,15 @@ public class SplineWalker : MonoBehaviour
     {
         if (progress >= currentTimePoints.PointA && progress <= currentTimePoints.PointB) // if we are in between A and B, slow down. 1st half of curve
         {
+            //if(progress >= nextTimePoints.PointA && progress <= nextTimePoints.PointB)
+            //{
+            //    currentTimePoints = nextTimePoints;
+
+            //    if (pointIndex + 1 >= timePointsList.Count)
+            //        pointIndex++;
+
+            //    return;
+            //}
             if (!hasReachedPointA)
             {
                 SetLerpValuesAtPointA();
@@ -173,7 +197,6 @@ public class SplineWalker : MonoBehaviour
         {
             currentTimePoints = timePointsList[pointIndex];
         }
-
     }
 
     private void SetTriggerInputValue()

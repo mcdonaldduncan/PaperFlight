@@ -30,13 +30,29 @@ public class CameraHandler : MonoBehaviour
     [Header("Assign value to smooth rotation by")]
     [SerializeField] float rotationDelta;
 
-    float zoomXOffset;
-    float zoomYOffset;
-    float zoomZOffset;
+    bool isZoomingOut;
+    bool zoomOffsetSet;
+    Vector3 zoomOffset;
 
     void LateUpdate()
     {
-        Follow();
+        if (isZoomingOut)
+        {
+            if (!zoomOffsetSet)
+            {
+                zoomOffset = new Vector3(transform.localPosition.x - 5, transform.localPosition.y + 7, transform.localPosition.z);
+                zoomOffsetSet = true;
+            }
+
+            if (transform.localPosition.x - zoomOffset.x < .01f)
+                isZoomingOut = false;
+
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition, zoomOffset, .005f);
+        }
+        else
+        {
+            Follow();
+        }
     }
 
     void Follow()
@@ -117,9 +133,9 @@ public class CameraHandler : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Zoom"))
+        if (other.CompareTag("Zoom"))
         {
-            fixedOffset = false;
+            isZoomingOut = true;
         }
     }
 }
