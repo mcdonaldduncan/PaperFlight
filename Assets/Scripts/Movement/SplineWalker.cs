@@ -54,8 +54,6 @@ public class SplineWalker : MonoBehaviour
         progress = startProgress;
         vrAxisTwo = VRAxis.Two;
 
-        Time.timeScale = 2;
-
         if (timePointsList.Count > 0)
         {
             usingTimePoints = true;

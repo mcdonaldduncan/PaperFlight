@@ -18,7 +18,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.12185224, g: 0.12156863, b: 0.16862746, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.02
+  m_FogDensity: 0.015
   m_LinearFogStart: 0
   m_LinearFogEnd: 340.3
   m_AmbientSkyColor: {r: 0.6215735, g: 0.64079744, b: 0.6792453, a: 1}
@@ -873,7 +873,7 @@ MonoBehaviour:
     PointB: 1.18
     durationFactor: 1500
   totalDuration: 140
-  spline: {fileID: 1190554860}
+  spline: {fileID: 847032666}
   usingControllers: 1
 --- !u!65 &106385935
 BoxCollider:
@@ -15106,7 +15106,7 @@ PrefabInstance:
     - target: {fileID: 5108046501477535796, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
       propertyPath: far clip plane
-      value: 1500
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 5108046501033427446, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
@@ -15116,7 +15116,7 @@ PrefabInstance:
     - target: {fileID: 5108046501033427446, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
       propertyPath: far clip plane
-      value: 1500
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 5108046502357243835, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
@@ -15126,7 +15126,7 @@ PrefabInstance:
     - target: {fileID: 5108046502357243835, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
       propertyPath: far clip plane
-      value: 1500
+      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bd629098b48b074d9b821de87c59f40, type: 3}
@@ -15246,11 +15246,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4628804983147210, guid: e087b2e0350a04133877e2482d9869bf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 152
+      value: 386
       objectReference: {fileID: 0}
     - target: {fileID: 4628804983147210, guid: e087b2e0350a04133877e2482d9869bf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -494
+      value: -153
       objectReference: {fileID: 0}
     - target: {fileID: 4628804983147210, guid: e087b2e0350a04133877e2482d9869bf, type: 3}
       propertyPath: m_LocalRotation.x
