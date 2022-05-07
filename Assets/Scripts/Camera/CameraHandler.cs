@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class CameraHandler : MonoBehaviour
 {
-    // Select movement type
-    [Header("Select following method")]
-    [SerializeField] bool fixedOffset;
-    [SerializeField] bool thirdPerson;
-
-    // Select rotation in 3rd person
-    [Header("Select if rotation is coupled in third person")]
-    [SerializeField] bool coupleThirdPersonRotation;
-
     // Select rotation axis to follow
     [Header("Select axis to couple")]
     [SerializeField] bool coupleX;
@@ -51,22 +42,11 @@ public class CameraHandler : MonoBehaviour
         }
         else
         {
-            Follow();
+            OffsetTargetFollow();
         }
     }
 
-    void Follow()
-    {
-        if (fixedOffset)
-        {
-            OffsetTargetFollow();           
-        }
-        if (thirdPerson)
-        {
-            ThirdPersonPosition();
-        }
-    }
-
+    
     void OffsetTargetFollow()
     {
         transform.position = new Vector3(target.position.x + xOffset, target.position.y + yOffset, target.position.z + zOffset);
@@ -106,29 +86,6 @@ public class CameraHandler : MonoBehaviour
         }
 
         return eulerTarget;
-    }
-
-    // calculate polar coordinates behind target object
-    void ThirdPersonPosition()
-    {
-        float rotation = Mathf.Deg2Rad * target.rotation.eulerAngles.y;
-
-        float x = xOffset * Mathf.Sin(rotation);
-        float z = xOffset * Mathf.Cos(rotation);
-
-        Vector3 targetPosition = new Vector3(x, yOffset, z);
-
-        transform.position = target.position + targetPosition;
-
-        if (coupleThirdPersonRotation)
-        {
-            ThirdPersonRotation();
-        }
-    }
-
-    void ThirdPersonRotation()
-    {
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, target.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
     }
 
     private void OnTriggerEnter(Collider other)

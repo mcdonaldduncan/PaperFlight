@@ -71,7 +71,7 @@ public class SplineWalker : MonoBehaviour
         if (usingControllers)
             SetTriggerInputValue();
 
-        Debug.Log(progress);
+        //Debug.Log(progress);
     }
 
     void MoveAlongSpline()
