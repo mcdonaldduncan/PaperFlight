@@ -18,7 +18,7 @@ public class FadeAlpha : MonoBehaviour
     {
         timer = GetComponent<Timer>();
         timer.OnTimerEnd += OnTimerEnd; // bind delegate
-        timer.InitializeTimer(4, "FadeToBlack");
+        timer.InitializeTimer(8, "FadeToBlack");
         timer.StartTimer();
        
         blackBox = transform.GetChild(0).gameObject;
@@ -31,7 +31,7 @@ public class FadeAlpha : MonoBehaviour
         {
             if (!isWaitingToFade)
             {
-                timer.InitializeTimer(3, "FadeToClear");
+                timer.InitializeTimer(4, "FadeToClear");
                 timer.StartTimer();
                 blackBox.SetActive(false);
                 isWaitingToFade = true;
@@ -41,20 +41,20 @@ public class FadeAlpha : MonoBehaviour
 
     private void OnTimerEnd()
     {
-        if(timer.currentHandle.name.Equals("FadeToBlack"))
+        if (timer.currentHandle.name.Equals("FadeToBlack"))
         {
             if (!hasFadedToBlack)
             {
                 ScreenFader.Instance.FadeTo(Color.black, duration: 3);
-                hasFadedToBlack = true;             
+                hasFadedToBlack = true;
             }
         }
-        else if(timer.currentHandle.name.Equals("FadeToClear"))
+        else if (timer.currentHandle.name.Equals("FadeToClear"))
         {
-            if(!hasFadedToClear)
+            if (!hasFadedToClear)
             {
-                ScreenFader.Instance.FadeToClearFromBlack(duration: 5);
                 player.GetComponent<SplineWalker>().enabled = true;
+                ScreenFader.Instance.FadeToClearFromBlack(duration: 5);
                 hasFadedToClear = true;
             }
         }
