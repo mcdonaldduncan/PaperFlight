@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CameraHandler : MonoBehaviour
 {
+    [SerializeField] GameObject plane;
+    SplineWalker walker;
+
     // Select rotation axis to follow
     [Header("Select axis to couple")]
     [SerializeField] bool coupleX;
@@ -25,20 +28,26 @@ public class CameraHandler : MonoBehaviour
     bool zoomOffsetSet;
     Vector3 zoomOffset;
 
+    void Start()
+    {
+        walker = plane.GetComponent<SplineWalker>();
+    }
+
     void LateUpdate()
     {
         if (isZoomingOut)
         {
+            walker.enabled = false;
             if (!zoomOffsetSet)
             {
                 zoomOffset = new Vector3(transform.localPosition.x - 5, transform.localPosition.y + 7, transform.localPosition.z);
                 zoomOffsetSet = true;
             }
 
-            if (transform.localPosition.x - zoomOffset.x < .01f)
+            if (Vector3.Distance(transform.localPosition, zoomOffset) < .01f)
                 isZoomingOut = false;
 
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, zoomOffset, .005f);
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition, zoomOffset, .5f * Time.deltaTime);
         }
         else
         {
