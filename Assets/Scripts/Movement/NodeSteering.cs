@@ -27,6 +27,9 @@ public class NodeSteering : MonoBehaviour
 
     void FollowNodes()
     {
+        if (index == nodes.Length)
+            return;
+
         if (transform.position.z > nodes[index].position.z + 1f || transform.position == nodes[index].position)
             index++;
 

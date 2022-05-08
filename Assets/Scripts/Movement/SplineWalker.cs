@@ -42,6 +42,9 @@ public class SplineWalker : MonoBehaviour
 
     private float halfway;
 
+    [SerializeField] private float maxIncrease;
+    private float currentIncrease;
+
     [SerializeField] private bool usingControllers;
     private IVRInputDevice inputDevice;
     private string vrAxisTwo;
@@ -199,7 +202,7 @@ public class SplineWalker : MonoBehaviour
 
     private void SetTriggerInputValue()
     {
-        float maxDuration = initialDuration;
+        //float maxDuration = initialDuration;
 
         if (inputDevice == null)
         {
@@ -207,10 +210,25 @@ public class SplineWalker : MonoBehaviour
             return;
         }
 
-        float step = Time.deltaTime * .005f;
+        if (inputDevice.GetAxis1D(VRAxis.Two) > 0)
+        {
+            currentIncrease = maxIncrease;
+        }
+        else
+        {
+            currentIncrease = 0;
+        }
+        //if (inputDevice.GetAxis1D(VRAxis.Two) == 0)
+        //{
+        //    currentIncrease = 0;
+        //}
 
-        float speedGoal = maxDuration / (1 + inputDevice.GetAxis1D(vrAxisTwo));
+        float targetDuration = totalDuration + currentIncrease;
 
-        totalDuration = Mathf.MoveTowards(totalDuration, speedGoal, step);
+        float step = Time.deltaTime;
+
+        //float speedGoal = maxDuration / (1 + inputDevice.GetAxis1D(vrAxisTwo));
+
+        totalDuration = Mathf.MoveTowards(totalDuration, targetDuration, step);
     }
 }
