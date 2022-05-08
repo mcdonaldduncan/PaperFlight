@@ -223,7 +223,7 @@ public class SplineWalker : MonoBehaviour
         //    currentIncrease = 0;
         //}
 
-        float targetDuration = totalDuration + currentIncrease;
+        float targetDuration = initialDuration + currentIncrease;
 
         float step = Time.deltaTime;
 
