@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2112550168}
-  m_IndirectSpecularColor: {r: 0.029865164, g: 0.034901965, b: 0.049519453, a: 1}
+  m_IndirectSpecularColor: {r: 0.029868495, g: 0.034906987, b: 0.049523357, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5618,36 +5618,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 299755681}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &301955176
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1569844763}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 301955177}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &301955177
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1569844763}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301955176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1569844764}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &312401231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24908,22 +24878,6 @@ Transform:
   m_Father: {fileID: 117344717}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1344423971
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 1569844763}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1569844764}
-  m_Layer: 0
-  m_Name: GameObject (1) (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
 --- !u!1001 &1345744395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32327,21 +32281,12 @@ PrefabInstance:
     - {fileID: 7718266660996179434, guid: 4ed30083473a1a84aa841dc3b8beca49, type: 3}
     - {fileID: 5149422669342215588, guid: 4ed30083473a1a84aa841dc3b8beca49, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4ed30083473a1a84aa841dc3b8beca49, type: 3}
---- !u!4 &1569844764
+--- !u!4 &1569844764 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4700548812586785930, guid: 4ed30083473a1a84aa841dc3b8beca49,
+    type: 3}
   m_PrefabInstance: {fileID: 1569844763}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1344423971}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 301955177}
-  m_Father: {fileID: 605092983}
-  m_RootOrder: 29
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1573462814
 GameObject:
   m_ObjectHideFlags: 0
@@ -33561,26 +33506,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1676988090}
     m_Modifications:
-    - target: {fileID: 5108046501033427446, guid: 7bd629098b48b074d9b821de87c59f40,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5108046501033427446, guid: 7bd629098b48b074d9b821de87c59f40,
-        type: 3}
-      propertyPath: far clip plane
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5108046502357243835, guid: 7bd629098b48b074d9b821de87c59f40,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5108046502357243835, guid: 7bd629098b48b074d9b821de87c59f40,
-        type: 3}
-      propertyPath: far clip plane
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 5108046500975685791, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
       propertyPath: m_Name
@@ -33655,6 +33580,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.4885829
+      objectReference: {fileID: 0}
+    - target: {fileID: 5108046501033427446, guid: 7bd629098b48b074d9b821de87c59f40,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5108046501033427446, guid: 7bd629098b48b074d9b821de87c59f40,
+        type: 3}
+      propertyPath: far clip plane
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5108046502357243835, guid: 7bd629098b48b074d9b821de87c59f40,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5108046502357243835, guid: 7bd629098b48b074d9b821de87c59f40,
+        type: 3}
+      propertyPath: far clip plane
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 5108046501477535796, guid: 7bd629098b48b074d9b821de87c59f40,
         type: 3}
@@ -40332,7 +40277,7 @@ PrefabInstance:
     - target: {fileID: 5278592259132972884, guid: b7ebd9dba938d504ba58626628840921,
         type: 3}
       propertyPath: m_ScaleInLightmap
-      value: 0.16
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5278592259132972884, guid: b7ebd9dba938d504ba58626628840921,
         type: 3}
