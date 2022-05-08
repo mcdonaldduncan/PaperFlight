@@ -6,18 +6,18 @@ public class DelayedMusicStart : MonoBehaviour
 {
     [SerializeField] AudioSource music;
     [SerializeField] float delay;
-
-    WaitForSeconds audioDelay;
+    private Timer timer;
 
     void Start()
     {
-        audioDelay = new WaitForSeconds(delay);
-        StartCoroutine(StartAfterDelay());
+        timer = GetComponent<Timer>();
+        timer.InitializeTimer(delay, "AudioDelay");
+        timer.StartTimer();
+        timer.OnTimerEnd += OnTimerEnd; // bind delegate
     }
 
-    IEnumerator StartAfterDelay()
+    private void OnTimerEnd()
     {
-        yield return audioDelay;
         music.Play();
     }
 }
