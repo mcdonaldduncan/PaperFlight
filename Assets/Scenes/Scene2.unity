@@ -22120,9 +22120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c02f237377601c42b1efcc93a029945, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AppData: {fileID: 0}
+  m_AppData: {fileID: 4900000, guid: 424a4b4a8c74b594fa6cee06f4e5dc58, type: 3}
   m_AssetLookup: {fileID: 0}
-  m_RootGameObjects: []
+  m_RootGameObjects:
+  - {fileID: 0}
+  - {fileID: 1676988087}
   m_FadeIn:
     m_Fade: 1
     m_Color: {r: 0, g: 0, b: 0, a: 1}
