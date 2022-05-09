@@ -24,7 +24,6 @@ public class FadeAlpha : MonoBehaviour
         blackBox = transform.GetChild(0).gameObject;
     }
 
-    // MoveTowards called in update, lerp called as coroutine
     void Update()
     {
         if (hasFadedToBlack && !ScreenFader.Instance.IsFading)

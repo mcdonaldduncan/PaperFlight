@@ -6,6 +6,7 @@ using UnityEngine;
 public class SplineWalker : MonoBehaviour
 {
     [SerializeField] float startProgress;
+    [SerializeField] float additionalDuration;
 
     [Serializable]
     private struct TimePoints
@@ -72,7 +73,8 @@ public class SplineWalker : MonoBehaviour
         RotateAlongSpline();
 
         if (usingControllers)
-            SetTriggerInputValue();
+            additionalDuration = SetTriggerInputValue();
+
 
         //Debug.Log(progress);
     }
@@ -86,7 +88,7 @@ public class SplineWalker : MonoBehaviour
                 ChangeSpeed();// slow or speed up travel along spline to make things smoother
             }
 
-            progress += Time.deltaTime / totalDuration; // iterate current point along spline
+            progress += Time.deltaTime / totalDuration + additionalDuration; // iterate current point along spline
 
             transform.position = spline.GetPoint(progress); // movement - set position to iterated point
         }
@@ -200,15 +202,15 @@ public class SplineWalker : MonoBehaviour
         }
     }
 
-    private void SetTriggerInputValue()
+    private float SetTriggerInputValue()
     {
         //float maxDuration = initialDuration;
 
         if (inputDevice == null)
         {
             inputDevice = VRDevice.Device.PrimaryInputDevice;
-            return;
         }
+
 
         if (inputDevice.GetAxis1D(VRAxis.Two) > 0)
         {
@@ -216,19 +218,19 @@ public class SplineWalker : MonoBehaviour
         }
         else
         {
-            currentIncrease = 0;
+            currentIncrease = 0f;
         }
         //if (inputDevice.GetAxis1D(VRAxis.Two) == 0)
         //{
         //    currentIncrease = 0;
         //}
 
-        float targetDuration = initialDuration + currentIncrease;
+        float targetDuration = currentIncrease;
 
-        float step = Time.deltaTime;
-
+        //float step = Time.deltaTime;
         //float speedGoal = maxDuration / (1 + inputDevice.GetAxis1D(vrAxisTwo));
+        //totalDuration = Mathf.MoveTowards(totalDuration, targetDuration, step);
 
-        totalDuration = Mathf.MoveTowards(totalDuration, targetDuration, step);
+        return targetDuration;
     }
 }
