@@ -6,7 +6,9 @@ using UnityEngine;
 public class SplineWalker : MonoBehaviour
 {
     [SerializeField] float startProgress;
-    [SerializeField] float additionalDuration;
+    [SerializeField] float durationChange;
+    
+    float additionalDuration;
 
     [Serializable]
     private struct TimePoints
@@ -44,7 +46,6 @@ public class SplineWalker : MonoBehaviour
     private float halfway;
 
     [SerializeField] private float maxIncrease;
-    private float currentIncrease;
 
     [SerializeField] private bool usingControllers;
     private IVRInputDevice inputDevice;
@@ -71,12 +72,7 @@ public class SplineWalker : MonoBehaviour
     {
         MoveAlongSpline();
         RotateAlongSpline();
-
-        if (usingControllers)
-            additionalDuration = SetTriggerInputValue();
-
-
-        //Debug.Log(progress);
+        ApplyTriggerIncrease();
     }
 
     void MoveAlongSpline()
@@ -88,7 +84,7 @@ public class SplineWalker : MonoBehaviour
                 ChangeSpeed();// slow or speed up travel along spline to make things smoother
             }
 
-            progress += Time.deltaTime / totalDuration + additionalDuration; // iterate current point along spline
+            progress += Time.deltaTime / (totalDuration + additionalDuration); // iterate current point along spline
 
             transform.position = spline.GetPoint(progress); // movement - set position to iterated point
         }
@@ -204,13 +200,12 @@ public class SplineWalker : MonoBehaviour
 
     private float SetTriggerInputValue()
     {
-        //float maxDuration = initialDuration;
+        float currentIncrease;
 
         if (inputDevice == null)
         {
             inputDevice = VRDevice.Device.PrimaryInputDevice;
         }
-
 
         if (inputDevice.GetAxis1D(VRAxis.Two) > 0)
         {
@@ -220,17 +215,14 @@ public class SplineWalker : MonoBehaviour
         {
             currentIncrease = 0f;
         }
-        //if (inputDevice.GetAxis1D(VRAxis.Two) == 0)
-        //{
-        //    currentIncrease = 0;
-        //}
+        
+        return currentIncrease;
+    }
 
-        float targetDuration = currentIncrease;
+    private void ApplyTriggerIncrease()
+    {
+        float step = Time.deltaTime * durationChange;
 
-        //float step = Time.deltaTime;
-        //float speedGoal = maxDuration / (1 + inputDevice.GetAxis1D(vrAxisTwo));
-        //totalDuration = Mathf.MoveTowards(totalDuration, targetDuration, step);
-
-        return targetDuration;
+        additionalDuration = Mathf.MoveTowards(additionalDuration, SetTriggerInputValue(), step);
     }
 }
