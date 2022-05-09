@@ -30,7 +30,6 @@ public class CameraHandler : MonoBehaviour
     {
         if (isZoomingOut)
         {
-            walker.enabled = false;
             if (!zoomOffsetSet)
             {
                 zoomOffset = new Vector3(transform.localPosition.x - 5, transform.localPosition.y + 7, transform.localPosition.z);
