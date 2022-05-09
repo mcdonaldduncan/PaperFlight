@@ -9,10 +9,14 @@ public class BergTrigger : MonoBehaviour
     [SerializeField] float delayTime;
 
     private WaitForSeconds delay;
+    Timer timer;
 
     void Start()
     {
-        delay = new WaitForSeconds(delayTime);
+        timer = GetComponent<Timer>();
+        timer.InitializeTimer(delayTime, "BergAnimation");
+        //delay = new WaitForSeconds(delayTime);
+        timer.OnTimerEnd += OnTimerEnd; // bind delegate
         myAnimator.SetBool("Berg", false);
     }
 
@@ -20,15 +24,20 @@ public class BergTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            StartCoroutine(AudioAfterDelay());
+            timer.StartTimer();
+           // StartCoroutine(AudioAfterDelay());
             myAnimator.SetBool("Berg", true);
         }
         
     }
 
-    IEnumerator AudioAfterDelay()
+    //IEnumerator AudioAfterDelay()
+    //{
+    //    yield return delay;
+    //}
+
+    void OnTimerEnd()
     {
-        yield return delay;
         glacierAudio.Play();
     }
 }
