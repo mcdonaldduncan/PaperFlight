@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class CameraHandler : MonoBehaviour
 {
-    [SerializeField] GameObject plane;
-    SplineWalker walker;
-
     // Select rotation axis to follow
     [Header("Select axis to couple")]
     [SerializeField] bool coupleX;
@@ -28,11 +25,7 @@ public class CameraHandler : MonoBehaviour
     bool zoomOffsetSet;
     Vector3 zoomOffset;
 
-    void Start()
-    {
-        walker = plane.GetComponent<SplineWalker>();
-    }
-
+    
     void LateUpdate()
     {
         if (isZoomingOut)
