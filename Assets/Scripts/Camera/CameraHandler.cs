@@ -21,30 +21,9 @@ public class CameraHandler : MonoBehaviour
     [Header("Assign value to smooth rotation by")]
     [SerializeField] float rotationDelta;
 
-    bool isZoomingOut;
-    bool zoomOffsetSet;
-    Vector3 zoomOffset;
-
-    
     void LateUpdate()
     {
-        if (isZoomingOut)
-        {
-            if (!zoomOffsetSet)
-            {
-                zoomOffset = new Vector3(transform.localPosition.x - 5, transform.localPosition.y + 7, transform.localPosition.z);
-                zoomOffsetSet = true;
-            }
-
-            if (Vector3.Distance(transform.localPosition, zoomOffset) < .01f)
-                isZoomingOut = false;
-
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, zoomOffset, .5f * Time.deltaTime);
-        }
-        else
-        {
-            OffsetTargetFollow();
-        }
+        OffsetTargetFollow();
     }
 
     
@@ -87,13 +66,5 @@ public class CameraHandler : MonoBehaviour
         }
 
         return eulerTarget;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Zoom"))
-        {
-            isZoomingOut = true;
-        }
     }
 }
