@@ -24,13 +24,15 @@ public class End : MonoBehaviour
     {
         ScreenFader.Instance.FadeTo(Color.black, duration: 1);
         yield return ScreenFader.Instance.WaitUntilFadeComplete();
-        Game.SetActive(false);
+        EndGame();
 
-        if(!FadeEnd)
-        {
-            ScreenFader.Instance.FadeToClear(duration: 1);
-            EndUI.SetActive(true);
-        }
+        //Game.SetActive(false);
+
+        //if(!FadeEnd)
+        //{
+        //    ScreenFader.Instance.FadeToClear(duration: 1);
+        //    EndUI.SetActive(true);
+        //}
     }
 
     void RepositionAurora()
@@ -40,7 +42,7 @@ public class End : MonoBehaviour
 
     public void EndGame()
     {
-        //Application.Quit();
-        ExperienceApp.End();
+        Application.Quit();
+        //ExperienceApp.End();
     }
 }
